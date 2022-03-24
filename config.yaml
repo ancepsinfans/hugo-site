@@ -11,6 +11,8 @@ languages:
     languageName: English
     weight: 1
 
+
+
 # Control TOC depth
 markup:
   tableOfContents:
@@ -23,6 +25,8 @@ enableEmoji: true
 
 # Site parameters
 params:
+  background: "images/background.jpg"
+  
   # GitHub repo URL of your site
   gitRepo: https://github.com/ancepsinfans/hugo-site
 
