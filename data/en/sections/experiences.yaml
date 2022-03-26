@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Experiences
+  name: Work Experience
   id: experiences
   enable: true
   weight: 3
@@ -11,54 +11,62 @@ section:
 # Your experiences
 experiences:
 - company:
-    name: Example Co.
-    url: "https://www.example.com"
-    location: Dhaka Branch
+    name: Practicum
+    url: "https://www.practicum.yandex.com"
+    location: Moscow, Russia
     # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
+    overview: Practicum offers online, self-paced bootcamps in data analysis, data science, and software development.
   positions:
-  - designation: Senior Software Engineer
-    start: Nov 2019
+  - designation: Data Programs Content Lead
+    start: Dec 2020
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Design and develop XYZ tool for ABC task
-    - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
-    - Lead backend team.
+    - Lead a content team of 15 people.
+    - Maintain and improve educational content.
+    - Design, develop and manage a [content knowledge base](https://www.datapracticum.gatsbyjs.io) that allows students to review topics and broaden their learning experience.
+    - Design and develop videos to supplement lessons.
+    - Design interactives to boost student engagement.
+    - Monitor, analyze, and report on metrics for user engagement and students' educational success.
 
-  - designation: Junior Software Engineer
-    start: Nov 2017
-    end: Oct 2019
+  - designation: Lead Data Editor
+    start: Feb 2020
+    end: Dec 2020
     responsibilities:
-    - Implement and test xyz feature for abc tool.
-    - Support client for abc tool.
-    - Learn k,d,w technology for xyz.
-
-- company:
-    name: PreExample Co.
-    url: "https://www.example.com"
-    location: Nowhere
-    overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
-  positions:
-  - designation: Software Engineer
-    start: March 2016
-    end: May 2017
-    responsibilities:
-    - Write lots of example codes.
-    - Read lots of examples.
-    - See lots of example videos.
+    - Edit course content for the Data Science track.
+    - Edit marketing materials, including ads, banners, and blog posts.
+    - Create and maintain company-wide style guide for educational materials and external communication.
 
 - company:
-    name: Intern Counting Company (ICC).
-    url: "https://www.example.com"
-    location: Intern Land
-    overview: Intern counting Company (ICC) is responsible for counting worldwide intern Engineers.
+    name: Moscow Lyceum Stupeni
+    url: "https://www.stupeni-lyceum.ru/"
+    location: Moscow, Russia
+    overview: Lyceum Stupeni is a private school (1-11 grade), positioned as an alternative to state schools with a focus on language, science and art programs.
   positions:
-  - designation: Intern
-    start: Jun 2015
-    end: Jan 2016
+  - designation: Lead English Instructor
+    start: Aug 2015
+    end: Dec 2020
     responsibilities:
-    - Count lost of interns.
-    - Count more interns.
-    - Count me as an intern.
+    - Design and lead lessons for students of the 2nd to 11th grades.
+    - Create the English language curricula.
+    - Prepare students for international English exams ([Cambridge](https://www.cambridgeenglish.org/exams-and-tests/), [IELTS](https://www.ielts.org/), [TOEFL](https://www.ets.org/toefl/))
+    - Plan and lead weekly theater lessons, organize annual performances.
+    - Organize and prepare students for an annunal interscholastic Lincoln-Douglas debate tournament / create an automated tabulation system for results.
+    - Create and maintain an electronic database of teaching materials for the foreign languages staff.
+
+- company:
+    name: The American Home
+    url: "http://www.ah33.ru/teach-english/"
+    location: Vladimir, Russia
+    overview: The American Home has been providing English courses to people of all ages since 1992.
+  positions:
+  - designation: English Instructor
+    start: Aug 2012
+    end: Jul 2015
+    responsibilities:
+    - Design and lead lessons to students from beginner to advanced.
+    - Organize weekly cultural events and lectures.
+    - Edit and author course books.
+    - Create an automated system for recording grades and assigning/tracking homework.
+
