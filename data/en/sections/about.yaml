@@ -7,60 +7,51 @@ section:
   template: sections/about.html #
 
 # your designation
-designation: Software Engineer
+designation: Data Content Lead
 # your company information
 company:
-  name: Example Co.
-  url: "https://www.example.com"
+  name: Practicum
+  url: "https://www.practicum.yandex.com"
   
 # a summary about you
-summary: 'I am a passionate software engineer with x years of working experience. I built OSS tools for [Kubernetes](https://kubernetes.io/) using GO. My tools help people to deploy their workloads in Kubernetes. Sometimes, I work on some fun projects such as writing a theme, etc.'
+summary: "I'm a skilled editor and project manager, an organized and systematic thinker with a high attention to detail. Seeking an opportunity to combine strengths in math and language with a deep interest in politics."
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
-  url: "example@gmail.com"
+  url: "zachary.r.bullard@gmail.com"
 
 - name: Github
   icon: "fab fa-github"
-  url: "https://www.github.com/example"
-
-- name: Stackoverflow
-  icon: "fab fa-stack-overflow"
-  url: "#"
+  url: "https://www.github.com/ancepsinfans"
 
 - name: LinkedIn
   icon: "fab fa-linkedin"
-  url: "#"
+  url: "https://www.linkedin.com/in/zach-bullard"
 
-- name: Twitter
-  icon: "fab fa-twitter"
-  url: "#"
+- name: I******m
+  icon: "fab fa-instagram"
+  url: "https://www.instagram.com/ancepsinfans"
 
-- name: Facebook
-  icon: "fab fa-facebook"
-  url: "#"
+- name: Goodreads
+  icon: "fab fa-goodreads"
+  url: "https://goodreads.com/ancepsinfans"
   
 # Show your badges
 # You can show your verifiable certificates from https://www.credly.com.
 # You can also show a circular bar indicating the level of expertise on a certain skill
 badges:
-- type: certification
-  name: Certified Kubernetes Security Specialist
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
-
-- type: certification
-  name: Istio and IBM Cloud Kubernetes Service
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
-
-- type: certification
-  name: Artificial Intelligence and Machine Learning
-  url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
-  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
+- type: soft-skill-indicator
+  name: Python
+  percentage: 85
+  color: green
+  
+- type: soft-skill-indicator
+  name: Russian lang. (fluent)
+  percentage: 100
+  color: '#c23d32'
 
 - type: soft-skill-indicator
   name: Leadership
@@ -74,5 +65,5 @@ badges:
 
 - type: soft-skill-indicator
   name: Hard Working
-  percentage: 85
-  color: orange
+  percentage: 95
+  color: "#773d3b"
