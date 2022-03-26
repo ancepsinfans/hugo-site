@@ -26,14 +26,12 @@ projects:
   summary: Site for reviewing course materials and broadening the student learning experience.
   tags: ["professional", "gatsbyjs"]
 
-- name: Tensorflow
-  logo: /images/sections/projects/tensorflow.png
-  role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
-  #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning"]
+- name: Interactives
+  role: Project Manager
+  #repo: https://github.com/tensorflow/tensorflow
+  url: "/posts/interactives/"
+  summary: Interactives designed with enriching the student learning experience in mind.
+  tags: ["professional", "javascript"]
 
 - name: A sample academic paper
   role: Team Lead
