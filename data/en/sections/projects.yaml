@@ -9,13 +9,11 @@ section:
   # hideTitle: true
 
 # filter buttons
-buttons:
-- name: All
-  filter: "all"
-- name: Professional
-  filter: "professional"
-- name: Hobby
-  filter: "hobby"
+#buttons:
+#- name: All
+#  filter: "all"
+#- name: Professional
+#  filter: "professional"
 
 # your projects
 projects:
@@ -24,35 +22,31 @@ projects:
   #repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
   url: "https://datapracticum.gatsbyjs.io"  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: Site for reviewing course materials and broadening the student learning experience.
-  tags: ["professional", "gatsbyjs"]
+  tags: ["gatsbyjs"]
 
 - name: Interactives
   role: Project Manager
   #repo: https://github.com/tensorflow/tensorflow
   url: "/posts/interactives/"
   summary: Interactives designed with enriching the student learning experience in mind.
-  tags: ["professional", "javascript"]
+  tags: ["javascript"]
 
-- name: A sample academic paper
-  role: Team Lead
-  timeline: "Jan 2017 - Nov 2017"
-  url: "https://www.example.com"
-  summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
-  tags: ["academic","iot"]
+- name: Educational videos
+  role: Project Manager
+  url: "posts/videos"
+  summary: Videos designed to accompy the test-based lesson material in the form of project guides, extra material, and alternatives to reading.
+  tags: ["video", "motion design"]
 
-- name: Nocode
-  logo: /images/sections/projects/no-code.png
-  role: Nothing
-  timeline: "Oct 2019 - Dec 2019"
-  repo: https://github.com/kelseyhightower/nocode
-  #url: ""
-  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
-  tags: ["hobby", "fun"]
+- name: Personality Test
+  role: Project Manager
+  #repo:
+  url: "https://b5-web.vercel.app"
+  summary: We created a site for conducting personality tests based on the Big 5 framework. The goals of the project were to get more insights into students to help retention, tailor the learning experience to their needs, and also to provide them with a fun project in analyzing the results.
+  tags: ["big five", "Johnson inventory"]
 
-- name: Toha
-  logo: /images/sections/projects/toha.png
+- name: Congressional speech analysis
   role: Owner
-  timeline: "Jun 2019 - Present"
-  repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
+  timeline: "2020 - 2021"
+  repo: https://github.com/ancepsinfans/speeches
+  summary: This project contains a preliminary analysis of Congressional floor speeches given by the members of congress. Among the results of the analysis, I found that speech patterns could predict relative age well. Additionally, there were differences in the emotional valence of speeches given by Democrats vs those given by Republicans.
+  tags: ["hobby",'python',"NLP","politics"]
