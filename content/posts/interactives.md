@@ -7,6 +7,8 @@ theme: Toha
 
 ### Practice with `.loc`
 
+Best viewed on desktop
+
 <iframe width="100%" height="900" src="https://code.s3.yandex.net/data-analyst-eng/widgets/loc.dist/loc.html" title="loc" frameborder="0"></iframe>
 
 ---
