@@ -2,7 +2,7 @@
 section:
   name: Skills
   id: skills
-  enable: false
+  enable: true
   weight: 2
   showOnNavbar: true
   # Can optionally hide the title in sections
@@ -12,30 +12,30 @@ section:
 # Give a summary of you each skill in the summary section.
 skills:
 - name: Russian
-  logo: "/images/sections/skills/lang.png"
+  logo: "/images/sections/skills/prometheus.png"
   summary: "More than a decade of living in Moscow with daily communication in Russian. BA in Russian Language and Culture, Vanderbilt University."
 
 - name: Python Development
-  logo: "/images/sections/skills/Python.png"
+  logo: "/images/sections/skills/go.png"
   summary: "Using as the main language for professional development and assessment of the content in Practicum's data programs. Capable of writing scalable, testable, and maintainable program."
   url: "https://python.org/"
 
 - name: Video Production
-  logo: '/images/sections/skills/video.jpg'
+  logo: '/images/sections/skills/linux.png'
   summary: "Wrote, edited, and directed the design of video content to accompany topics in Practicum's data programs. Examples can be found below under Projects."
   url: "https://youtu.be/VKjciJDUvEU"
 
 - name: Data Analysis
-  logo: '/images/sections/skills/da.png'
+  logo: '/images/sections/skills/c++.png'
   summary: "Collected and analyzed user- and content-based metrics to develop reports and dashboards for communicating results and setting priorities for further improvment."
 
 - name: Interactives Design
-  logo: '/images/sections/skills/interactives.jpeg'
+  logo: '/images/sections/skills/cloud.png'
   summary: "Designed interactive widgets for broadening the student learning experience. Examples can be found below under Projects."
   url: "https://code.s3.yandex.net/data-analyst-eng/widgets/loc.dist/loc.html"
 
 - name: MVP Site Creation
-  logo: '/images/sections/skills/dev.jpeg'
+  logo: '/images/sections/skills/kubernetes.png'
   summary: "Built MVP websites for internal and student-facing use in order to address issues identified by data and feedback analysis. Examples can be found below under Projects."
 
 - name: Git
