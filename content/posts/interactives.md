@@ -7,7 +7,7 @@ theme: Toha
 
 ### Practice with `.loc`
 
-<iframe width="100%" height="900" src="https://code.s3.yandex.net/data-analyst-eng/widgets/loc.dist/loc.html" title="loc" frameborder="0" allow="accelerometer; clipboard-write;" allowfullscreen></iframe>
+<iframe width="100%" height="900" src="https://code.s3.yandex.net/data-analyst-eng/widgets/loc.dist/loc.html" title="loc" frameborder="0"></iframe>
 
 ---
 
