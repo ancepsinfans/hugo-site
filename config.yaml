@@ -60,12 +60,12 @@ params:
       enable: false
       # Share post on different social media
       shareButtons:
-        facebook: false
-        twitter: false
-        linkedin: false
-        reddit: false
-        whatsapp: false
-        email: false
+        facebook: true
+        twitter: true
+        linkedin: true
+        reddit: true
+        whatsapp: true
+        email: true
         # tumblr: true
         # pocket: true
         # diaspora: true
@@ -74,6 +74,9 @@ params:
     # Enable & configure "Notes" features
     notes:
       enable: false
+    
+    analytics:
+      enabled: false
     # Provide footer configuration.
   footer:
     enable: true

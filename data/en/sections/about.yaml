@@ -14,7 +14,7 @@ company:
   url: "https://www.practicum.yandex.com"
   
 # a summary about you
-summary: "I'm a skilled editor and project manager, an organized and systematic thinker with a high attention to detail. Seeking an opportunity to combine strengths in math and language with a deep interest in politics."
+summary: "I'm a skilled editor and project manager, an organized and systematic thinker with a high attention to detail. I enjoy using my strengths in math and language and interest in programming and learning new things to solve problems."
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -52,6 +52,11 @@ badges:
   name: Russian lang. (fluent)
   percentage: 100
   color: '#c23d32'
+  
+- type: soft-skill-indicator
+  name: JavaScript
+  percentage: 45
+  color: "#f7DD4A"
 
 - type: soft-skill-indicator
   name: Leadership
