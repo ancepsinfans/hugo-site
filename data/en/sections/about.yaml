@@ -12,63 +12,63 @@ designation: Data Content Lead
 company:
   name: Practicum
   url: "https://www.practicum.yandex.com"
-  
+
 # a summary about you
 summary: "I'm a skilled editor and project manager, an organized and systematic thinker with a high attention to detail. I enjoy using my strengths in math and language and interest in programming and learning new things to solve problems."
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
-- name: Email
-  icon: "fas fa-envelope"
-  url: "zachary.r.bullard@gmail.com"
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "zachary.r.bullard@gmail.com"
 
-- name: Github
-  icon: "fab fa-github"
-  url: "https://www.github.com/ancepsinfans"
+  - name: Github
+    icon: "fab fa-github"
+    url: "https://www.github.com/ancepsinfans"
 
-- name: LinkedIn
-  icon: "fab fa-linkedin"
-  url: "https://www.linkedin.com/in/zach-bullard"
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "https://www.linkedin.com/in/zach-bullard"
 
-- name: I******m
-  icon: "fab fa-instagram"
-  url: "https://www.instagram.com/ancepsinfans"
+  - name: Instagram
+    icon: "fab fa-instagram"
+    url: "https://www.instagram.com/ancepsinfans"
 
-- name: Goodreads
-  icon: "fab fa-goodreads"
-  url: "https://goodreads.com/ancepsinfans"
-  
+  - name: Goodreads
+    icon: "fab fa-goodreads"
+    url: "https://goodreads.com/ancepsinfans"
+
 # Show your badges
 # You can show your verifiable certificates from https://www.credly.com.
 # You can also show a circular bar indicating the level of expertise on a certain skill
 badges:
-- type: soft-skill-indicator
-  name: Python
-  percentage: 85
-  color: green
-  
-- type: soft-skill-indicator
-  name: Russian lang. (fluent)
-  percentage: 100
-  color: '#c23d32'
-  
-- type: soft-skill-indicator
-  name: JavaScript
-  percentage: 45
-  color: "#f7DD4A"
+  - type: soft-skill-indicator
+    name: Python
+    percentage: 85
+    color: green
 
-- type: soft-skill-indicator
-  name: Leadership
-  percentage: 85
-  color: blue
+  - type: soft-skill-indicator
+    name: Russian lang. (fluent)
+    percentage: 100
+    color: "#c23d32"
 
-- type: soft-skill-indicator
-  name: Team Work
-  percentage: 90
-  color: yellow
+  - type: soft-skill-indicator
+    name: JavaScript
+    percentage: 60
+    color: "#f7DD4A"
 
-- type: soft-skill-indicator
-  name: Hard Working
-  percentage: 95
-  color: "#773d3b"
+  - type: soft-skill-indicator
+    name: Leadership
+    percentage: 90
+    color: blue
+
+  - type: soft-skill-indicator
+    name: Team Work
+    percentage: 90
+    color: yellow
+
+  - type: soft-skill-indicator
+    name: Hard Working
+    percentage: 95
+    color: "#773d3b"
