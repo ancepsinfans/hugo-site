@@ -10,31 +10,32 @@ section:
   # hideTitle: true
 
 degrees:
-- name: Bachelors in Psychology, Bachelors in Russian Language and Culture
-  icon: fa-graduation-cap
-  timeframe: 2008-2012
-  institution:
-    name: Vanderbilt University
-    url: "https://www.vanderbilt.edu/"
-  grade: #(optional)
-    scale: GPA
-    achieved: 3.65
-    outOf: 4
-  publications: #(optional)
-  - title: Temporal context and the organisational impairment of memory search in schizophrenia.
-    url: "https://www.tandfonline.com/doi/abs/10.1080/13546805.2015.1031372?journalCode=pcnp20"
-  extracurricularActivities: #(optional)
-  - Assistant Manager of Building Operations at the Commons Center
-  - Tutor at the Student Athlete Center
-  - Developed and led physics lessons at the Vanderbilt Kennedy Center for students with disabilities
-  - Volunteered at Vanderbilt University Theatre, Tech Department
-  - Hosted a weekly radio program at WRVU
-- name: Secondary School Certificate
-  icon: fa-school
-  timeframe: 2004-2008
-  institution:
-    name: St. Andrew's Episcopal School
-  grade: #(optional)
-    scale: GPA
-    achieved: 4.18
-    outOf: 4
+  - name: Bachelors in Psychology, Bachelors in Russian Language and Culture
+    icon: fa-graduation-cap
+    timeframe: 2008-2012
+    institution:
+      name: Vanderbilt University
+      url: "https://www.vanderbilt.edu/"
+    grade: #(optional)
+      scale: GPA
+      achieved: 3.65
+      outOf: 4
+    publications: #(optional)
+      - title: Temporal context and the organisational impairment of memory search in schizophrenia.
+        url: "https://www.tandfonline.com/doi/abs/10.1080/13546805.2015.1031372?journalCode=pcnp20"
+    extracurricularActivities: #(optional)
+      - Assistant Manager of Building Operations at the Commons Center
+      - Tutor at the Student Athlete Center
+      - Developed and led physics lessons at the Vanderbilt Kennedy Center for students with disabilities
+      - Volunteered at Vanderbilt University Theatre, Tech Department
+      - Hosted a weekly radio program at WRVU
+
+  - name: Secondary School Certificate
+    icon: fa-school
+    timeframe: 2004-2008
+    institution:
+      name: St. Andrew's Episcopal School
+    grade: #(optional)
+      scale: GPA
+      achieved: 4.18
+      outOf: 4

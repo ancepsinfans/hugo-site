@@ -1,7 +1,7 @@
 ---
-title: "Examples of Educational Videos I've Designed"
-date: 2022-03-26T06:00:23+06:00
-description: A small collection of videos 
+title: "Some Educational Videos I've Designed"
+date: 2023-03-26T06:00:23+06:00
+description: A small collection of videos
 theme: Toha
 ---
 
@@ -20,4 +20,3 @@ theme: Toha
 ### Descriptive Statistics
 
 <iframe width="100%" height="900" src="https://youtube.com/embed/PFtGG8gH-E8" title="histogram" frameborder="0" allow="accelerometer; clipboard-write;" allowfullscreen></iframe>
-

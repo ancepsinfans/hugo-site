@@ -1,7 +1,7 @@
 ---
-title: "Examples of Interactives I've Designed"
-date: 2022-03-26T06:00:23+06:00
-description: A small collection of interactives 
+title: "Some Interactives I've Designed"
+date: 2023-03-26T06:00:23+06:00
+description: A small collection of interactives
 theme: Toha
 ---
 

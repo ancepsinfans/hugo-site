@@ -6,40 +6,32 @@ section:
   weight: 2
   showOnNavbar: true
   # Can optionally hide the title in sections
-  # hideTitle: true
+  #hideTitle: true
 
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Russian
-  logo: "/images/sections/skills/prometheus.png"
-  summary: "More than a decade of living in Moscow with daily communication in Russian. BA in Russian Language and Culture, Vanderbilt University."
+  - name: Russian Language
+    logo: "/images/sections/skills/prometheus.png"
+    summary: "More than a decade of living in Moscow with daily formal and informal communication in Russian. BA in Russian Language and Culture, Vanderbilt University."
 
-- name: Python Development
-  logo: "/images/sections/skills/go.png"
-  summary: "Using as the main language for professional development and assessment of the content in Practicum's data programs. Capable of writing scalable, testable, and maintainable program."
-  url: "https://python.org/"
+  - name: Python Development
+    logo: "/images/sections/skills/go.png"
+    summary: "Primary language used in performing scripting and data analysis. Capable of writing scalable, testable, and maintainable programs."
 
-- name: Video Production
-  logo: '/images/sections/skills/linux.png'
-  summary: "Wrote, edited, and directed the design of video content to accompany topics in Practicum's data programs. Examples can be found below under Projects."
-  url: "https://youtu.be/VKjciJDUvEU"
+  - name: Video Production
+    logo: "/images/sections/skills/linux.png"
+    summary: "Wrote, edited, and directed the design of video content to accompany topics in Practicum's data programs. Examples can be found below under [Projects](/#projects)."
 
-- name: Data Analysis
-  logo: '/images/sections/skills/c++.png'
-  summary: "Collected and analyzed user- and content-based metrics to develop reports and dashboards for communicating results and setting priorities for further improvment."
+  - name: Data Analysis
+    logo: "/images/sections/skills/c++.png"
+    summary: "Collected and analyzed user- and content-based metrics. Created reports and dashboards for communicating results. Leveraged results to prioritize further improvements and evaluate experimental results."
 
-- name: Interactives Design
-  logo: '/images/sections/skills/cloud.png'
-  summary: "Designed interactive widgets for broadening the student learning experience. Examples can be found below under Projects."
-  url: "https://code.s3.yandex.net/data-analyst-eng/widgets/loc.dist/loc.html"
+  - name: Interactive Element Design
+    logo: "/images/sections/skills/cloud.png"
+    summary: "Designed interactive widgets for broadening the student learning experience. Examples can be found below under [Projects](/#projects)."
+    # url: "https://code.s3.yandex.net/data-analyst-eng/widgets/loc.dist/loc.html"
 
-- name: MVP Site Creation
-  logo: '/images/sections/skills/kubernetes.png'
-  summary: "Built MVP websites for internal and student-facing use in order to address issues identified by data and feedback analysis. Examples can be found below under Projects."
-
-- name: Git
-  logo: '/images/sections/skills/git.png'
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  url: "https://git-scm.com/"
-
+  - name: Web Development
+    logo: "/images/sections/skills/kubernetes.png"
+    summary: "Built MVP websites and tools in JavaScript for internal and student-facing use in order to address issues identified by data and feedback analysis. Examples can be found below under  [Projects](/#projects)."
