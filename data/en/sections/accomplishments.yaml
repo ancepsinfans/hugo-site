@@ -16,4 +16,4 @@ accomplishments:
       name: Courses by Josh Comeau
       url: https://www.joshwcomeau.com/courses
     courseOverview: This course is designed to cover web development with React -- from the basic nuts and bolts, to creating complex components and custom hooks, to implementing all of this through the NextJS framework.
-    certificateURL: "/certificates/joy-of-react.pdf"
+    certificateURL: "https://ancepsinfans.github.io/certificates/joy-of-react.pdf"

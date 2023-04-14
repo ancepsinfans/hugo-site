@@ -11,14 +11,12 @@ languages:
     languageName: English
     weight: 1
 
-
-
 # Control TOC depth
 markup:
   goldmark:
     renderer:
       unsafe: true
-      
+
   tableOfContents:
     startLevel: 2
     endLevel: 6
@@ -36,7 +34,7 @@ enableEmoji: true
 # Site parameters
 params:
   background: "images/site/background.jpg"
-  
+
   # GitHub repo URL of your site
   #gitRepo: https://github.com/ancepsinfans/hugo-site
 
@@ -50,7 +48,7 @@ params:
   # Currently, you can just hide it from the footer.
   newsletter:
     enable: false
-  
+
   features:
     # Enable and configure portfolio
     portfolio:
@@ -74,7 +72,7 @@ params:
     # Enable & configure "Notes" features
     notes:
       enable: false
-    
+
     analytics:
       enabled: false
     # Provide footer configuration.
@@ -93,4 +91,4 @@ params:
       enable: true
     # Show/hide credentials section in the footer. Default is "true".
     credentials:
-      enable: true
+      enable: false
