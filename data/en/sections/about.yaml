@@ -7,11 +7,11 @@ section:
   template: sections/about.html #
 
 # your designation
-designation: Learning Experience PM
+designation: Product Manager - Data Programs
 # your company information
 company:
-  name: Practicum
-  url: "https://www.practicum.com"
+  name: TripleTen (fmr. Practicum)
+  url: "https://www.tripleten.com"
 
 resume: "files/resume.pdf"
 
@@ -23,7 +23,7 @@ summary: "I'm a skilled editor and product manager, an organized and systematic 
 socialLinks:
   - name: Email
     icon: "fas fa-envelope"
-    url: "zachary.r.bullard@gmail.com"
+    url: "zach@bullard.dev"
 
   - name: Github
     icon: "fab fa-github"
@@ -48,7 +48,7 @@ badges:
 
   - type: soft-skill-indicator
     name: React
-    percentage: 80
+    percentage: 85
     color: "#f7DD4A"
 
   - type: soft-skill-indicator

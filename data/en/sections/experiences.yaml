@@ -11,13 +11,13 @@ section:
 # Your experiences
 experiences:
   - company:
-      name: Practicum
-      url: "https://www.practicum.com"
+      name: TripleTen (fmr. Practicum)
+      url: "https://www.tripleten.com"
       location: Belgrade, Serbia
       # company overview
-      overview: Practicum offers online, self-paced bootcamps in data analysis, data science, and software development.
+      overview: TripleTen offers online, self-paced bootcamps in data analysis, data science, quality assurance and software development.
     positions:
-      - designation: Learning Experience PM
+      - designation: Product Manager - Data Programs
         start: Feb 2022
         # don't provide end date if you are currently working there. It will be replaced by "Present"
         # end: Dec 2020
@@ -36,7 +36,7 @@ experiences:
         responsibilities:
           - Lead a content team of 15 people.
           - Maintain and improve educational content.
-          - Design, develop and manage a [content knowledge base](datapracticum.gatsbyjs.io) that allows students to review topics and broaden their learning experience.
+          - Design, develop and manage a [content knowledge base](tripleten.netlify.app) that allows students to review topics and broaden their learning experience.
           - Design and develop videos to supplement lessons.
           - Design interactives to boost student engagement.
           - Monitor, analyze, and report on metrics for user engagement and students' educational success.

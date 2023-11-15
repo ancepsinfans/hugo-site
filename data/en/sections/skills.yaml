@@ -11,27 +11,28 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-  - name: Russian Language
-    logo: "/images/sections/skills/prometheus.png"
-    summary: "More than a decade of living in Moscow with daily formal and informal communication in Russian. BA in Russian Language and Culture, Vanderbilt University."
-
   - name: Python Development
     logo: "/images/sections/skills/go.png"
     summary: "Primary language used in performing scripting and data analysis. Capable of writing scalable, testable, and maintainable programs."
 
-  - name: Video Production
-    logo: "/images/sections/skills/linux.png"
-    summary: "Wrote, edited, and directed the design of video content to accompany topics in Practicum's data programs. Examples can be found below under [Projects](/#projects)."
-
   - name: Data Analysis
     logo: "/images/sections/skills/c++.png"
     summary: "Collected and analyzed user- and content-based metrics. Created reports and dashboards for communicating results. Leveraged results to prioritize further improvements and evaluate experimental results."
+
+  - name: Web Development
+    logo: "/images/sections/skills/kubernetes.png"
+    summary: "Built MVP websites and tools in JavaScript for internal and student-facing use in order to address issues identified by data and feedback analysis. Examples can be found below under  [Projects](/#projects)."
+
+  - name: Video Production
+    logo: "/images/sections/skills/linux.png"
+    summary: "Wrote, edited, directed, and recorded the design of video content to accompany topics in TripleTen's data programs. Examples can be found below under [Projects](/#projects)."
 
   - name: Interactive Element Design
     logo: "/images/sections/skills/cloud.png"
     summary: "Designed interactive widgets for broadening the student learning experience. Examples can be found below under [Projects](/#projects)."
     # url: "https://code.s3.yandex.net/data-analyst-eng/widgets/loc.dist/loc.html"
 
-  - name: Web Development
-    logo: "/images/sections/skills/kubernetes.png"
-    summary: "Built MVP websites and tools in JavaScript for internal and student-facing use in order to address issues identified by data and feedback analysis. Examples can be found below under  [Projects](/#projects)."
+  - name: Russian Language
+    logo: "/images/sections/skills/prometheus.png"
+    summary: "More than a decade of living in Moscow with daily formal and informal communication in Russian. BA in Russian Language and Culture, Vanderbilt University."
+

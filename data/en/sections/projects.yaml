@@ -21,31 +21,26 @@ buttons:
 
 # your projects
 projects:
-  - name: Wordle Clone
-    url: "https://gamething.vercel.app"
-    summary: "I created a wordle clone with a few extra features: a tracker for average number of attempts and a 'low power' mode which renders one column useless (for a little extra challenge)"
-    tags: ["hobby", "game", "react"]
-
-  - name: Skills Graph
-    summary: "I created a site/management system for recording, storing, and presenting student scores on tests of soft and hard skills."
-    tags: ["data analysis", "mongodb", "nextjs", "react"]
-
-  - name: Discord Bot
-    summary: "I created a bot for managing student interactions in the discord server for Practicum's programs. Features include: saving marked messages, leaving anonymous posts/questions, tracking open questions for monitoring SLA, matching students with similar progress for group work. Additionally, wrote, maintained, and analyzed student behavioral data and server 'health' based on the Discord API."
-    tags: ["discord", "bot", "data analysis", "react"]
-
-  - name: School 🙃
-    url: "https://new-school.vercel.app"
-    summary: "I built a prototype of a platform for learning new information. This platform features learning paths, user account pages, personal and population analytics, quizzes, popovers, and more. "
-    tags: ["hobby", "mongodb", "nextjs", "edtech", "react"]
+  - name: Student Reports
+    url: https://student-reports.vercel.app/f0b995c5a2f7a48a
+    summary: "I conducted pipeline for automating weekly student report generation. After analyzing data about learning performance and platform activity, the results are sent to this React-based site for rendering, and links are automatically sent to students. All user data is anonymized on site and never is exposed."
+    tags: ["data analysis", "react", "nextjs", "python"]
+  
+  - name: LLM-based Chatbot
+    summary: "I built a chatbot for TripleTen's student Discord space based on Llama2. The bot is complete with a vectorized database of our content so that students can get accurate and specific help with their program tasks in real-time."
+    tags: ["chatbot", "LLM"]
 
   - name: Content Knowledge Base
     # role: Creator/Curator
     #repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-    url: "https://datapracticum.gatsbyjs.io" # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+    url: "https://tripleten.netlify.app" # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
     summary: We created a site for reviewing course materials connected with each of the units of our program. Students can also find other additional information such as how to set up local environments, tools that we recommend to aid the learning process, and extra reading.
     tags: ["gatsby", "react"]
 
+  - name: Discord Bot
+    summary: "I created a bot for managing student interactions in the discord server for Practicum's programs. Features include: saving marked messages, leaving anonymous posts/questions, tracking open questions for monitoring SLA, matching students with similar progress for group work. Additionally, wrote, maintained, and analyzed student behavioral data and server 'health' based on the Discord API."
+    tags: ["discord", "bot", "data analysis", "react"]
+  
   - name: Interactives
     # role: Project Manager
     #repo: https://github.com/tensorflow/tensorflow
@@ -58,6 +53,21 @@ projects:
     url: "posts/videos"
     summary: Videos designed to accompany the text-based lesson material in the form of project guides, extra material, and alternatives to reading.
     tags: ["video", "script-writing", "motion design"]
+  
+  - name: Wordle Clone
+    url: "https://gamething.vercel.app"
+    summary: "I created a wordle clone with a few extra features: a tracker for average number of attempts and a 'low power' mode which renders one column useless (for a little extra challenge)"
+    tags: ["hobby", "game", "react"]
+
+  - name: Skills Graph
+    url: https://skills-graph.vercel.app/test
+    summary: "I created a site/management system for recording, storing, and presenting student scores on tests of soft and hard skills."
+    tags: ["data analysis", "mongodb", "nextjs", "react"]
+
+  - name: School 🙃
+    url: "https://new-school.vercel.app"
+    summary: "I built a prototype of a platform for learning new information. This platform features learning paths, user account pages, personal and population analytics, quizzes, popovers, and more. "
+    tags: ["hobby", "mongodb", "nextjs", "edtech", "react"]
 
   - name: Personality Test
     # role: Project Manager
