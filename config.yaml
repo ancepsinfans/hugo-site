@@ -1,4 +1,4 @@
-baseURL: https://zach-bullard.netlify.app
+baseURL: https://zach.bullard.dev
 
 languageCode: en-us
 title: "Zach Bullard"
@@ -33,7 +33,7 @@ enableEmoji: true
 
 # Site parameters
 params:
-  background: "/images/site/background.jpg"
+  background: "images/site/background.jpg"
 
   # GitHub repo URL of your site
   #gitRepo: https://github.com/ancepsinfans/hugo-site
