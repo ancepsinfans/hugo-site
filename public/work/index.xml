@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work Samples on Zach Bullard</title>
+    <link>http://localhost:1313/work/</link>
+    <description>Recent content in Work Samples on Zach Bullard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Nov 2023 06:00:23 +0600</lastBuildDate><atom:link href="http://localhost:1313/work/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Correlation</title>
+      <link>http://localhost:1313/work/correlation/</link>
+      <pubDate>Thu, 16 Nov 2023 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/work/correlation/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/23a50e6b-0e77-47c9-8751-83ce86502b32/height_weight.csv&#34;&gt;height_weight.csv&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Often, a primary goal of data analysis is to show the relationship between two variables. For example, how does the price of an apartment relate to its size? Does its distance from downtown affect the value as well? What about the year of construction or the level of noise in the neighborhood? Scatterplots help us answer such questions by giving us a visual representation of these relationships.&lt;/p&gt;
+&lt;p&gt;The tendency for one variable to change in relation to the change in another variable is called &lt;strong&gt;correlation&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Guided Case Study: Basic Python</title>
+      <link>http://localhost:1313/work/gcs/</link>
+      <pubDate>Thu, 16 Nov 2023 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/work/gcs/</guid>
+      <description>&lt;h2 id=&#34;datasets&#34;&gt;Datasets&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90f1bbbf-e3a9-4a77-b562-c998d5dd2d1d/gaming_consoles.csv&#34;&gt;gaming_consoles.csv&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Welcome to the culminating challenge of the sprint! You’ve mastered an array of essential concepts and learned basic Python syntax, and now it’s time to work on a Guided Case Study that will bridge theory and practice, transforming your knowledge into tangible problem-solving abilities.&lt;/p&gt;
+&lt;p&gt;You’ll work on a set of tasks and quizzes aimed at analyzing data designed in a way so that you can get hands-on experience and solve real-world problems like those you’ll be handling in your future career. Start when you’re ready, feel free to take breaks and work at your own tempo, and remember, each challenge you overcome is a stepping stone toward becoming a proficient Python programmer!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Projects</title>
+      <link>http://localhost:1313/work/sample/</link>
+      <pubDate>Thu, 16 Nov 2023 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/work/sample/</guid>
+      <description>&lt;h2 id=&#34;data-science--data-analytics-program-content&#34;&gt;Data Science &amp;amp; Data Analytics Program Content&lt;/h2&gt;
+&lt;p&gt;I have written, edited, and designed elements for optimizing the student learning experience in over 300 lessons for TripleTen&amp;rsquo;s Data Science and Data Analytics bootcamps.&lt;/p&gt;
+&lt;p&gt;You can find two example lessons at the links below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/work/gcs/&#34;&gt;Guided Case Study: Basic Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/work/correlation/&#34;&gt;Correlation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;interactives&#34;&gt;Interactives&lt;/h2&gt;
+&lt;p&gt;To make lessons more engaging, I worked with a designer to develop a series of over 40 interactive widgets aimed at helping students get an intuitive understanding of the material.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

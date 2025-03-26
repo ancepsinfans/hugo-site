@@ -1,0 +1,22 @@
+{{ if hugo.IsMultilingual }}
+<div class="floating-lang-selector">
+  <div class="lang-selector">
+    <button
+      class="lang-selector-btn"
+      id="lang-selector"
+    >
+      <i class="fas fa-globe"></i>
+      <span>{{ .Site.Language.LanguageName }}</span>
+    </button>
+    <div class="lang-selector-dropdown">
+      {{ range .Site.Home.AllTranslations }}
+      <a
+        class="lang-selector-option"
+        href="{{ .Permalink }}"
+        >{{ .Language.LanguageName }}</a
+      >
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

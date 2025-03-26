@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Zach Bullard</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Zach Bullard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 26 Mar 2023 06:00:23 +0600</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <item>
+      <title>Some Educational Videos I&#39;ve Designed</title>
+      <link>http://localhost:1313/posts/videos/</link>
+      <pubDate>Sun, 26 Mar 2023 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/videos/</guid>
+      <description>&lt;h3 id=&#34;working-with-dates-and-times&#34;&gt;Working with dates and times&lt;/h3&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;900&#34; src=&#34;https://youtube.com/embed/VKjciJDUvEU&#34; title=&#34;dates_times&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; clipboard-write;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;statistical-data-analysis-project&#34;&gt;Statistical Data Analysis Project&lt;/h3&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;650&#34; src=&#34;https://youtube.com/embed/MHxU_8d2dGk&#34; title=&#34;SDA&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; clipboard-write;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;descriptive-statistics&#34;&gt;Descriptive Statistics&lt;/h3&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;900&#34; src=&#34;https://youtube.com/embed/PFtGG8gH-E8&#34; title=&#34;histogram&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; clipboard-write;&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    
+    <item>
+      <title>Some Interactives I&#39;ve Designed</title>
+      <link>http://localhost:1313/posts/interactives/</link>
+      <pubDate>Sun, 26 Mar 2023 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/interactives/</guid>
+      <description>&lt;h3 id=&#34;practice-with-loc&#34;&gt;Practice with &lt;code&gt;.loc&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Best viewed on desktop&lt;/p&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;900&#34; src=&#34;https://code.s3.yandex.net/data-analyst-eng/widgets/loc.dist/loc.html&#34; title=&#34;loc&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;changing-the-parameters-of-the-normal-distribution&#34;&gt;Changing the parameters of the normal distribution&lt;/h3&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;650&#34; src=&#34;https://code.s3.yandex.net/data-analyst/widgets/ND_dist_all/nd_01_page.html&#34; title=&#34;normdist&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; clipboard-write;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;histograms&#34;&gt;Histograms&lt;/h3&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;900&#34; src=&#34;https://code.s3.yandex.net/data-analyst/widgets/histogramm02_dist/histogramm02.html&#34; title=&#34;histogram&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; clipboard-write;&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

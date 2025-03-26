@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zach Bullard</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Zach Bullard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Nov 2023 06:00:23 +0600</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <item>
+      <title>Correlation</title>
+      <link>http://localhost:1313/work/correlation/</link>
+      <pubDate>Thu, 16 Nov 2023 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/work/correlation/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/23a50e6b-0e77-47c9-8751-83ce86502b32/height_weight.csv&#34;&gt;height_weight.csv&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Often, a primary goal of data analysis is to show the relationship between two variables. For example, how does the price of an apartment relate to its size? Does its distance from downtown affect the value as well? What about the year of construction or the level of noise in the neighborhood? Scatterplots help us answer such questions by giving us a visual representation of these relationships.&lt;/p&gt;
+&lt;p&gt;The tendency for one variable to change in relation to the change in another variable is called &lt;strong&gt;correlation&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Guided Case Study: Basic Python</title>
+      <link>http://localhost:1313/work/gcs/</link>
+      <pubDate>Thu, 16 Nov 2023 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/work/gcs/</guid>
+      <description>&lt;h2 id=&#34;datasets&#34;&gt;Datasets&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90f1bbbf-e3a9-4a77-b562-c998d5dd2d1d/gaming_consoles.csv&#34;&gt;gaming_consoles.csv&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Welcome to the culminating challenge of the sprint! You’ve mastered an array of essential concepts and learned basic Python syntax, and now it’s time to work on a Guided Case Study that will bridge theory and practice, transforming your knowledge into tangible problem-solving abilities.&lt;/p&gt;
+&lt;p&gt;You’ll work on a set of tasks and quizzes aimed at analyzing data designed in a way so that you can get hands-on experience and solve real-world problems like those you’ll be handling in your future career. Start when you’re ready, feel free to take breaks and work at your own tempo, and remember, each challenge you overcome is a stepping stone toward becoming a proficient Python programmer!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Projects</title>
+      <link>http://localhost:1313/work/sample/</link>
+      <pubDate>Thu, 16 Nov 2023 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/work/sample/</guid>
+      <description>&lt;h2 id=&#34;data-science--data-analytics-program-content&#34;&gt;Data Science &amp;amp; Data Analytics Program Content&lt;/h2&gt;
+&lt;p&gt;I have written, edited, and designed elements for optimizing the student learning experience in over 300 lessons for TripleTen&amp;rsquo;s Data Science and Data Analytics bootcamps.&lt;/p&gt;
+&lt;p&gt;You can find two example lessons at the links below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/work/gcs/&#34;&gt;Guided Case Study: Basic Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/work/correlation/&#34;&gt;Correlation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;interactives&#34;&gt;Interactives&lt;/h2&gt;
+&lt;p&gt;To make lessons more engaging, I worked with a designer to develop a series of over 40 interactive widgets aimed at helping students get an intuitive understanding of the material.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Some Educational Videos I&#39;ve Designed</title>
+      <link>http://localhost:1313/posts/videos/</link>
+      <pubDate>Sun, 26 Mar 2023 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/videos/</guid>
+      <description>&lt;h3 id=&#34;working-with-dates-and-times&#34;&gt;Working with dates and times&lt;/h3&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;900&#34; src=&#34;https://youtube.com/embed/VKjciJDUvEU&#34; title=&#34;dates_times&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; clipboard-write;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;statistical-data-analysis-project&#34;&gt;Statistical Data Analysis Project&lt;/h3&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;650&#34; src=&#34;https://youtube.com/embed/MHxU_8d2dGk&#34; title=&#34;SDA&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; clipboard-write;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;descriptive-statistics&#34;&gt;Descriptive Statistics&lt;/h3&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;900&#34; src=&#34;https://youtube.com/embed/PFtGG8gH-E8&#34; title=&#34;histogram&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; clipboard-write;&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    
+    <item>
+      <title>Some Interactives I&#39;ve Designed</title>
+      <link>http://localhost:1313/posts/interactives/</link>
+      <pubDate>Sun, 26 Mar 2023 06:00:23 +0600</pubDate>
+      
+      <guid>http://localhost:1313/posts/interactives/</guid>
+      <description>&lt;h3 id=&#34;practice-with-loc&#34;&gt;Practice with &lt;code&gt;.loc&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Best viewed on desktop&lt;/p&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;900&#34; src=&#34;https://code.s3.yandex.net/data-analyst-eng/widgets/loc.dist/loc.html&#34; title=&#34;loc&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;changing-the-parameters-of-the-normal-distribution&#34;&gt;Changing the parameters of the normal distribution&lt;/h3&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;650&#34; src=&#34;https://code.s3.yandex.net/data-analyst/widgets/ND_dist_all/nd_01_page.html&#34; title=&#34;normdist&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; clipboard-write;&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;histograms&#34;&gt;Histograms&lt;/h3&gt;
+&lt;iframe width=&#34;100%&#34; height=&#34;900&#34; src=&#34;https://code.s3.yandex.net/data-analyst/widgets/histogramm02_dist/histogramm02.html&#34; title=&#34;histogram&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; clipboard-write;&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    
+    
+    
+  </channel>
+</rss>

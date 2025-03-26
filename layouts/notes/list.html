@@ -1,0 +1,87 @@
+{{ define "header" }}
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}" />
+<link rel="stylesheet" href="{{ "/css/layouts/notes.css" | relURL }}"/>
+<link rel="stylesheet" href="{{ "/css/navigators/sidebar.css" | relURL }}">
+<!--================= custom style overrides =========================-->
+<link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
+
+{{ end }}
+
+{{ define "navbar" }}
+    {{ partial "navigators/navbar-2.html" . }}
+{{ end }}
+
+{{ define "sidebar" }}
+  {{ partial "navigators/sidebar.html" (dict "menuName" "sidebar" "menuItems" site.Menus.sidebar "ctx" .) }}
+{{ end }}
+
+{{ define "content" }}
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      <!--Hero Area-->
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url({{ strings.TrimSuffix "/" site.BaseURL }}{{ partial "helpers/get-hero.html" . }});'>
+      </div>
+
+      <!--Content Start-->
+      <div class="page-content">
+        <!-- Add title -->
+        <div class="title">
+          <h1>{{ .Page.Title }}</h1>
+        </div>
+
+        <!-- Add description -->
+        {{ if .Description }}
+        <div class="description">
+          {{ .Description }}
+        </div>
+        {{ end }}
+
+        <!-- Add content -->
+        {{ if .Content }}
+        <div class="content">
+          {{ .Content }}
+        </div>
+        {{ end }}
+
+        <!-- Add list of notes -->
+        <div class="notes">
+          {{ range .Pages }}
+          <div class="note">
+            <a href="{{ .Permalink }}">
+              <h2>{{ .Title }}</h2>
+              {{ if .Description }}
+              <p>{{ .Description }}</p>
+              {{ end }}
+            </a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--scroll back to top-->
+  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  {{ if hugo.IsMultilingual }}
+    {{ partial "navigators/floating-lang-selector.html" . }}
+  {{ end }}
+</section>
+{{ end }}
+
+{{ define "toc" }}
+  <section class="toc-section" id="toc-section">
+    {{ if site.Params.enableTOC }}
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">{{ i18n "toc_heading" }}</h5>
+      <hr>
+      <div class="toc">
+        {{ .TableOfContents }}
+      </div>
+    </div>
+    {{ end }}
+  </section>
+{{ end }}
+
+{{ define "scripts" }}
+<script src="{{ "/js/notes.js" | relURL }}"></script>
+{{ end }} 

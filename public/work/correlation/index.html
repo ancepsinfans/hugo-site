@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Correlation</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+<meta property="og:url" content="http://localhost:1313/work/correlation/">
+  <meta property="og:site_name" content="Zach Bullard">
+  <meta property="og:title" content="Correlation">
+  <meta property="og:description" content="Lesson on correlation and how to work with it in Python">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="work">
+    <meta property="article:published_time" content="2023-11-16T06:00:23+06:00">
+    <meta property="article:modified_time" content="2023-11-16T06:00:23+06:00">
+
+
+    
+    
+<meta name="description" content="Lesson on correlation and how to work with it in Python" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/css/layouts/single.css"/>
+<link rel="stylesheet" href="/css/navigators/sidebar.css">
+
+<link rel="stylesheet" href="/css/style.css"/>
+
+
+
+    
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+      
+      
+  
+
+
+      
+      
+<section class="content-section" id="content-section" >
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(http://localhost:1313/images/default-hero.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/profile_hu_7cb74b9e6b3ce438.jpg' alt="Author Image">
+          
+          <p>Thursday, November 16, 2023</p>
+        </div>
+
+        <div class="title">
+          <h1>Correlation</h1>
+        </div>
+        
+        <div class="post-content" id="post-content">
+          <p><a href="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/23a50e6b-0e77-47c9-8751-83ce86502b32/height_weight.csv">height_weight.csv</a></p>
+<hr>
+<p>Often, a primary goal of data analysis is to show the relationship between two variables. For example, how does the price of an apartment relate to its size? Does its distance from downtown affect the value as well? What about the year of construction or the level of noise in the neighborhood? Scatterplots help us answer such questions by giving us a visual representation of these relationships.</p>
+<p>The tendency for one variable to change in relation to the change in another variable is called <strong>correlation</strong>.</p>
+<p>The scatterplots we made in the last lesson show that height and weight are <strong>positively correlated.</strong> This makes sense because an increase in one generally means an increase in the other. An example of a <strong>negative correlation</strong> would be height and voice pitch; generally, the taller you are the lower the frequency of your voice.</p>
+<h2 id="correlation-coefficient">Correlation coefficient</h2>
+<p>It&rsquo;s one thing to look at a scatter plot, but we also need a numerical way to describe correlation.</p>
+<p>For this we have the <strong><a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson correlation coefficient</a>,</strong> commonly just referred to as the <strong>correlation coefficient</strong>. It quantifies how one variable tends to change when the other variable changes. The correlation coefficient can take any value between -1 and 1, where -1 represents perfect linear negative correlation and 1 represents perfect linear positive correlation. Generally, it works like this:</p>
+<ul>
+<li>If one value increases together with the other, the correlation coefficient is positive</li>
+<li>If one remains the same when the other changes, the coefficient is 0</li>
+<li>If one decreases when the other increases, the coefficient is negative</li>
+</ul>
+<p>The closer the coefficient is to -1 or 1, the stronger the correlation. On the other hand, a value of 0 can mean either that there&rsquo;s no correlation or that there&rsquo;s a complex non-linear connection that the coefficient can&rsquo;t reflect.</p>
+<p>To help you get a sense of the relationship between the correlation coefficient and the distribution of points in a scatterplot, we’ve included an interactive figure where you can change the correlation coefficient to see how the spread of data points changes.</p>
+<p>Note that there are many different scatterplots that could all result in the same correlation coefficient; this is just meant to be one example.</p>
+<iframe allowfullscreen="" src="https://practicum-content.s3.us-west-1.amazonaws.com/data-eng/Widgets/both/correlation_coefficients/corellation.html" style="width: 100%; min-height: 800px"></iframe>
+<h3 id="quiz-matching">Quiz (matching)</h3>
+<p><strong>Description</strong></p>
+<p>Match each scatterplot to the correlation coefficient that best describes its correlation:</p>
+<p><strong>Bins</strong></p>
+<p><strong>Questions</strong></p>
+<p>A) 0.99</p>
+<p><img src="https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_-05.png" alt="Untitled"></p>
+<p>B) 0.5</p>
+<p><img src="https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_-099.png" alt="Untitled"></p>
+<p>C) 0</p>
+<p><img src="https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_000.png" alt="Untitled"></p>
+<p>D) -0.5</p>
+<p><img src="https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_05.png" alt="Untitled"></p>
+<p>E) -0.99</p>
+<p><img src="https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_099.png" alt="Untitled"></p>
+<h2 id="calculating-the-correlation-coefficient">Calculating the correlation coefficient</h2>
+<p>In pandas, the Pearson correlation coefficient is calculated with the <strong>corr()</strong> method. It’s applied to the column containing the first variable, and the column with the second is passed as a parameter. It doesn&rsquo;t matter which is which. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> matplotlib <span style="color:#f92672">import</span> pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;/datasets/height_weight.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(df[<span style="color:#e6db74">&#39;height&#39;</span>]<span style="color:#f92672">.</span>corr(df[<span style="color:#e6db74">&#39;weight&#39;</span>]))
+</span></span></code></pre></div><hr>
+<pre tabindex="0"><code>0.9165261045538688
+</code></pre><hr>
+<p>With a coefficient of about 0.9, height and weight have a strong positive correlation in this dataset. This matches with our “common sense” that taller people tend to weigh more. Of course, there is variation in this trend, so we wouldn’t expect a perfect positive correlation coefficient of 1.</p>
+<p>It may be tempting to make a statement such as “a person’s height determines their weight”. But on its own, correlation can’t tell us anything about cause and effect; we only know that the two factors are correlated. To prove (or disprove) cause and effect, we would need to perform controlled experiments.</p>
+<p>For now, let&rsquo;s practice calculating correlation coefficients for other pairs of variables in our dataset.</p>
+<h2 id="tasks">Tasks</h2>
+<h3 id="task-1">Task 1</h3>
+<p>Remember the scatterplot you made in the last lesson for the <code>'height'</code> and <code>'age'</code> columns? Calculate the Pearson correlation coefficient for those columns and assign the result to a variable called <code>ah_corr</code>. Then print it. Does the result align with the scatterplot?</p>
+<p><strong>Hint</strong></p>
+<p>Call <code>corr()</code> on either the <code>'height'</code> or <code>'age'</code> column of <code>df</code> and pass the other column as an argument. Assign the result to <code>ah_corr</code>, then use <code>print()</code> to display it.</p>
+<p><strong>Success text</strong></p>
+<p>Almost 0 correlation! That jives with the scatterplot. It also makes intuitive sense. The youngest age in this dataset is 25 years old. Most people are done growing by then.</p>
+<p><strong>Precode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;/datasets/height_weight.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># write your code here</span>
+</span></span></code></pre></div><p><strong>Solution</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;/datasets/height_weight.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ah_corr <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;height&#39;</span>]<span style="color:#f92672">.</span>corr(df[<span style="color:#e6db74">&#39;age&#39;</span>])
+</span></span><span style="display:flex;"><span>print(ah_corr)
+</span></span></code></pre></div><p><strong>Output</strong></p>
+<pre tabindex="0"><code>0.010042046516844351
+</code></pre><h3 id="task-2">Task 2</h3>
+<p>Try calling the <code>corr()</code> method on the whole DataFrame. What happens? Print the result.</p>
+<p><strong>Hint</strong></p>
+<p>Call <code>corr()</code> on <code>df</code> and wrap it in a <code>print()</code> function.</p>
+<p><strong>Success text</strong></p>
+<p>It looks like pandas returned a DataFrame with the correlation coefficients for each pair of variables. Cool! Let’s learn more about that in the next lesson.</p>
+<p><strong>Precode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;/datasets/height_weight.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># write your code here</span>
+</span></span></code></pre></div><p><strong>Solution</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;/datasets/height_weight.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(df<span style="color:#f92672">.</span>corr())
+</span></span></code></pre></div><p><strong>Output</strong></p>
+<pre tabindex="0"><code>          height    weight       age      male
+height  1.000000  0.916526  0.010042  0.760690
+weight  0.916526  1.000000  0.228538  0.785218
+age     0.010042  0.228538  1.000000  0.004750
+male    0.760690  0.785218  0.004750  1.000000
+</code></pre>
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+        <div class="col-md-6 share-buttons">
+        
+            <strong></strong>
+            
+            
+            
+            
+            
+            
+            
+             
+            
+            
+          
+          </div>
+
+        
+        
+        </div>
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row next-prev-navigator">
+  
+  
+</div>
+
+      <hr />
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+      
+  
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:zach@bullard.dev target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>zach@bullard.dev</span>
+                </a></li>
+              
+            
+              
+                <li><span><i class="fas fa-phone-alt"></i></span> <span>601 706 9224</span></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+  </footer>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

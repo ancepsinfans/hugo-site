@@ -57,7 +57,7 @@ params:
     blog:
       enable: false
       # Share post on different social media
-      shareButtons: 
+      shareButtons:
         facebook: false
         twitter: false
         linkedin: false
@@ -73,8 +73,6 @@ params:
     notes:
       enable: false
 
-    analytics:
-      enabled: false
     # Provide footer configuration.
   footer:
     enable: true

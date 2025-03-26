@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Guided Case Study: Basic Python</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+<meta property="og:url" content="http://localhost:1313/work/gcs/">
+  <meta property="og:site_name" content="Zach Bullard">
+  <meta property="og:title" content="Guided Case Study: Basic Python">
+  <meta property="og:description" content="Mini-project for the end of the first unit of the Data Science program">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="work">
+    <meta property="article:published_time" content="2023-11-16T06:00:23+06:00">
+    <meta property="article:modified_time" content="2023-11-16T06:00:23+06:00">
+
+
+    
+    
+<meta name="description" content="Mini-project for the end of the first unit of the Data Science program" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/css/layouts/single.css"/>
+<link rel="stylesheet" href="/css/navigators/sidebar.css">
+
+<link rel="stylesheet" href="/css/style.css"/>
+
+
+
+    
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+      
+      
+  
+
+
+      
+      
+<section class="content-section" id="content-section" >
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(http://localhost:1313/images/default-hero.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/profile_hu_7cb74b9e6b3ce438.jpg' alt="Author Image">
+          
+          <p>Thursday, November 16, 2023</p>
+        </div>
+
+        <div class="title">
+          <h1>Guided Case Study: Basic Python</h1>
+        </div>
+        
+        <div class="post-content" id="post-content">
+          <h2 id="datasets">Datasets</h2>
+<p><a href="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90f1bbbf-e3a9-4a77-b562-c998d5dd2d1d/gaming_consoles.csv">gaming_consoles.csv</a></p>
+<hr>
+<p>Welcome to the culminating challenge of the sprint! You’ve mastered an array of essential concepts and learned basic Python syntax, and now it’s time to work on a Guided Case Study that will bridge theory and practice, transforming your knowledge into tangible problem-solving abilities.</p>
+<p>You’ll work on a set of tasks and quizzes aimed at analyzing data designed in a way so that you can get hands-on experience and solve real-world problems like those you’ll be handling in your future career. Start when you’re ready, feel free to take breaks and work at your own tempo, and remember, each challenge you overcome is a stepping stone toward becoming a proficient Python programmer!</p>
+<h2 id="scenario">Scenario</h2>
+<p>A local shop buys, repairs, and sells discontinued electronics. One of their biggest earners is old gaming consoles. The shop has collected historical sales data about these discontinued consoles in order to set prices and help prioritize which ones to repair. Let&rsquo;s take a look at the dataset:</p>
+<table>
+  <thead>
+      <tr>
+          <th>console</th>
+          <th>company</th>
+          <th>release_year</th>
+          <th>discontinued_year</th>
+          <th>release_price</th>
+          <th>units_sold</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>NES</td>
+          <td>Nintendo</td>
+          <td>1985</td>
+          <td>1995</td>
+          <td>179</td>
+          <td>61910000</td>
+      </tr>
+      <tr>
+          <td>Game Boy</td>
+          <td>Nintendo</td>
+          <td>1989</td>
+          <td>2003</td>
+          <td>89.99</td>
+          <td>118690000</td>
+      </tr>
+      <tr>
+          <td>SNES</td>
+          <td>Nintendo</td>
+          <td>1990</td>
+          <td>2003</td>
+          <td>199</td>
+          <td>49100000</td>
+      </tr>
+      <tr>
+          <td>Virtual Boy</td>
+          <td>Nintendo</td>
+          <td>1995</td>
+          <td>1996</td>
+          <td>179.95</td>
+          <td>770000</td>
+      </tr>
+      <tr>
+          <td>Game Boy Advance</td>
+          <td>Nintendo</td>
+          <td>2001</td>
+          <td>2010</td>
+          <td>99.99</td>
+          <td>81510000</td>
+      </tr>
+      <tr>
+          <td>Atari 2600</td>
+          <td>Atari</td>
+          <td>1977</td>
+          <td>1992</td>
+          <td>199</td>
+          <td>30000000</td>
+      </tr>
+      <tr>
+          <td>Sega Genesis</td>
+          <td>Sega</td>
+          <td>1988</td>
+          <td>1997</td>
+          <td>189</td>
+          <td>30750000</td>
+      </tr>
+      <tr>
+          <td>Game Gear</td>
+          <td>Sega</td>
+          <td>1990</td>
+          <td>1997</td>
+          <td>149.99</td>
+          <td>10620000</td>
+      </tr>
+      <tr>
+          <td>Sega CD</td>
+          <td>Sega</td>
+          <td>1991</td>
+          <td>1996</td>
+          <td>299</td>
+          <td>2240000</td>
+      </tr>
+      <tr>
+          <td>3DO</td>
+          <td>The 3DO Company</td>
+          <td>1993</td>
+          <td>1996</td>
+          <td>699.99</td>
+          <td>2000000</td>
+      </tr>
+      <tr>
+          <td>PlayStation</td>
+          <td>Sony Electronics</td>
+          <td>1994</td>
+          <td>2006</td>
+          <td>299</td>
+          <td>102490000</td>
+      </tr>
+      <tr>
+          <td>PlayStation 2</td>
+          <td>Sony Electronics</td>
+          <td>2000</td>
+          <td>2013</td>
+          <td>299</td>
+          <td>155000000</td>
+      </tr>
+  </tbody>
+</table>
+<p>This table contains six columns:</p>
+<ul>
+<li>console — the type of gaming console</li>
+<li>company — the company that manufactured it</li>
+<li>release_year — the year it was first introduced to the market</li>
+<li>discontinued_year — the year the company stopped manufacturing it</li>
+<li>release_price — the cost of the console at its release</li>
+<li>units_sold — the number of consoles sold over its product run</li>
+</ul>
+<p>This dataset is a great opportunity to practice working with complex lists in Python while analyzing the relative success of these old gaming consoles.</p>
+<h2 id="task-1">Task 1</h2>
+<p>Here, the dataset is presented to you as a nested list saved in the variable <code>console_data</code>. In future lessons, you&rsquo;ll learn how to load large datasets from files in one line of code. But for now, we&rsquo;re giving you the data in the precode already saved into a variable.</p>
+<p>Let&rsquo;s start out by printing our data to the screen in a nice-looking table format. We can do this by printing each row on its own line and each element at a consistent spacing. This requires using a nested for loop and an f-string in our <code>print()</code> function.</p>
+<p>Print the output so that each element is left-aligned and has a fixed string length of 20 characters.</p>
+<p><strong>Hint</strong></p>
+<p>Your code needs to have two for loops, with one loop nested inside the body of the other. The body of the inner loop should contain one line of code with a <code>print()</code> function that prints an f-string (<code>f'{...}'</code>) where the <code>...</code> is replaced with your loop variable and the correct formatting parameters. After the inner loop, print a new line in the body of the outer loop using <code>print()</code> with no arguments.</p>
+<p><strong>Success text</strong></p>
+<p>Look how beautiful that data is. And so much of it! There are other ways to neatly display data on your screen in Python — you&rsquo;ll learn more about those in the future as you start to work with larger datasets.</p>
+<p><strong>Precode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># write your code here</span>
+</span></span></code></pre></div><p><strong>Solution</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> console_data:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> elem <span style="color:#f92672">in</span> row:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>elem<span style="color:#e6db74">:</span><span style="color:#e6db74">&lt;20</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>    print()
+</span></span></code></pre></div><h2 id="task-2">Task 2</h2>
+<p>Now let&rsquo;s go about retrieving specific pieces of data from the table. Use list indexing to print out the row containing data about the Sega CD. Don&rsquo;t worry about formatting the output, just print the whole sublist. Then, on another line, use indexing again to print out the number of Game Boy consoles that were sold over its lifetime.</p>
+<p><strong>Hint</strong></p>
+<p>To print the Sega CD row, use single square brackets to select the correct index in <code>console_data</code>. To print the number of Game Boy consoles sold, use double square brackets to select the correct element from the sublist containing Game Boy data. The number of units sold is the last element in each sublist.</p>
+<p><strong>Success text</strong></p>
+<p>Good job. You can find any piece of information you need from this data structure of nested lists. There sure were a lot of Game Boys out there.</p>
+<p><strong>Precode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># write your code here</span>
+</span></span></code></pre></div><p><strong>Solution</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(console_data[<span style="color:#ae81ff">8</span>])
+</span></span><span style="display:flex;"><span>print(console_data[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">5</span>])
+</span></span></code></pre></div><h2 id="quiz-1"><strong>Quiz 1</strong></h2>
+<p>In the last two tasks, you printed out the full dataset as well as a single row and a single value. With our dataset stored as a nested list, can we also print out a single column? If so, how would we do that?</p>
+<ul>
+<li>No, because we decided to store the rows as sublists rather than the columns.
+Printing a column is not as straightforward as printing a row, but we can definitely still do it! We just need to use a for loop.</li>
+<li>Yes, by using a for loop to print one element from each sublist.
+That&rsquo;s right! Let&rsquo;s put this into practice in the next task.</li>
+<li>Yes, by using a for loop to print a sublist at each iteration.
+It&rsquo;s true that we can use a for loop to print a single column, but printing a whole sublist in each loop iteration will display values from every column.</li>
+</ul>
+<h2 id="task-3">Task 3</h2>
+<p>Use a for loop to print the first column of the table — the names of the consoles.</p>
+<p><strong>Hint</strong></p>
+<p>Loop over the rows of the table (i.e. the sublists in <code>console_data</code>) and print the value at the index that corresponds to the console name in each row. The console names are stored in the first column.</p>
+<p><strong>Success text</strong></p>
+<p>You&rsquo;ve got the Python skills to get anything you need from a list of lists!</p>
+<p><strong>Precode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># write your code here</span>
+</span></span></code></pre></div><p><strong>Solution</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> console_data:
+</span></span><span style="display:flex;"><span>    print(row[<span style="color:#ae81ff">0</span>])
+</span></span></code></pre></div><h2 id="the-big-picture-so-far">The Big Picture So Far</h2>
+<p>You have a dataset stored in a nested list. Each sublist represents a row from the table and each element of a sublist corresponds to a column value from the table. You were able to access specific values from the table using single and double indexing, as well as print a row, a column, or even the entire table. Now you can use these skills to perform table calculations and even add new columns to the table!</p>
+<h2 id="task-4">Task 4</h2>
+<p>The last column in the table stores the number of consoles that were sold over the lifetime of the console. How many consoles of all types were sold in total? Calculate this by using a for loop to sum all the values in the units sold column, saving the result in a variable called <code>total_sold</code>. Then print <code>total_sold</code> to the screen.</p>
+<p><strong>Hint</strong></p>
+<p>Assign the value of 0 to <code>total_sold</code> before your for loop. Then write a single for loop to loop over each row in <code>console_data</code>. In each loop iteration, use the correct row index to add the number of units sold to <code>total_sold</code>. After the for loop, call the <code>print()</code> function to print the result stored in <code>total_sold</code>.</p>
+<p><strong>Success text</strong></p>
+<p>Over half a billion consoles sold, and that&rsquo;s just for the ones in this dataset! Video games sure are popular. Good job summing a table column. In future courses, you&rsquo;ll learn more advanced techniques to find sums with specific conditions, such as finding the total consoles sold for just Nintendo or just Sega and then comparing them!</p>
+<p><strong>Precode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># write your code here</span>
+</span></span></code></pre></div><p><strong>Solution</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>total_sold <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> console_data:
+</span></span><span style="display:flex;"><span>    total_sold <span style="color:#f92672">=</span> total_sold <span style="color:#f92672">+</span> row[<span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>print(total_sold)
+</span></span></code></pre></div><h2 id="quiz-2"><strong>Quiz 2</strong></h2>
+<p>We want to use this console dataset to compare the popularity and success of each gaming console. But there isn&rsquo;t a particular column that we can use right off the bat, which makes sense because popularity can be subjective. As analysts, we need to create our own metric to represent popularity. Which of the following metrics do you think may be good indicators of console popularity? Check any and all that apply.</p>
+<ul>
+<li>Console lifespan</li>
+<li>Total revenue</li>
+<li>Consoles sold per year</li>
+</ul>
+<p>Feedback:</p>
+<p>All of these ideas could be decent metrics. Notice how all of them require us to perform calculations between columns in our dataset? Ultimately, the metric we choose will depend on the problem we are trying to solve. And if we aren&rsquo;t sure which metric will be the most useful, we can calculate different metrics and compare them, or use them in tandem.</p>
+<h2 id="task-5">Task 5</h2>
+<p>It makes sense that more popular consoles would tend to have a longer lifespan before being discontinued, so let&rsquo;s calculate the lifespan metric and add it as a new column at the end of the dataset.</p>
+<p>To do this, loop over each row in <code>console_data</code> and calculate the lifespan in years using the released year and discontinued year columns. Don&rsquo;t forget to append the result to each row in order to create the new column.</p>
+<p>We&rsquo;ve included a separate for loop in the precode to print your results, but the for loop that calculates the lifespan should come before this one.</p>
+<p><strong>Hint</strong></p>
+<p>Write a single for loop to iterate over each row in <code>console_data</code>. In the body of the loop, calculate the lifespan by using the correct row indices to subtract the released year from the discontinued year. Also in the body of the loop, use the <code>append()</code> method to append the lifespan to the row sublist. Don&rsquo;t change the for loop already given in the precode.</p>
+<p><strong>Success text</strong></p>
+<p>Great! You&rsquo;ve expanded your dataset by creating a column that contains one of your analysis metrics. That last column is the lifespan of each console in years.</p>
+<p><strong>Precode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># write your code here</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># this code will print your result table</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> console_data:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> elem <span style="color:#f92672">in</span> row:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>elem<span style="color:#e6db74">:</span><span style="color:#e6db74">&lt;20</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>    print()
+</span></span></code></pre></div><p><strong>Solution</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> console_data:
+</span></span><span style="display:flex;"><span>    lifespan <span style="color:#f92672">=</span> row[<span style="color:#ae81ff">3</span>] <span style="color:#f92672">-</span> row[<span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>    row<span style="color:#f92672">.</span>append(lifespan)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> console_data:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> elem <span style="color:#f92672">in</span> row:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>elem<span style="color:#e6db74">:</span><span style="color:#e6db74">&lt;20</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>    print()
+</span></span></code></pre></div><h2 id="task-6">Task 6</h2>
+<p>We&rsquo;ve successfully calculated our first metric and added it to our dataset as a new column. But the values are all over the place, which makes it cumbersome to compare between consoles. We can fix this by sorting our data!</p>
+<p>The code to create the lifespan column from the last task is provided for you here in the precode, as is the code to print your result. Add a line of code to sort <code>console_data</code> by the new lifespan column in order from longest to shortest, and save the result in a variable called <code>sorted_lifespan_data</code>. We’ve created the <code>key()</code> function for you to help you sort the values according to the correct element. Include this in your sorting function like so: <code>key=key</code>.</p>
+<p><strong>Hint</strong></p>
+<p>Use the <code>sorted()</code> function with three arguments to sort your data: <code>console_data</code>, <code>key=</code>, and <code>reverse=</code>. Use the <code>key</code> function in the precode: <code>key=key</code>. By default, <code>sorted()</code> sorts numerical values from least to greatest, so make sure to use the correct argument to sort in reverse order.</p>
+<p><strong>Success text</strong></p>
+<p>That&rsquo;s quite a range of lifespans. It looks like the Atari is the wise sage of the group and the Virtual Boy is&hellip; well, we don&rsquo;t talk about the Virtual Boy.</p>
+<p><strong>Precode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> console_data:
+</span></span><span style="display:flex;"><span>    lifespan <span style="color:#f92672">=</span> row[<span style="color:#ae81ff">3</span>] <span style="color:#f92672">-</span> row[<span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>    row<span style="color:#f92672">.</span>append(lifespan)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">key</span>(row):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> row[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># write your code here</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># this code will print your result table</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> sorted_lifespan_data:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> elem <span style="color:#f92672">in</span> row:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>elem<span style="color:#e6db74">:</span><span style="color:#e6db74">&lt;20</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>    print()
+</span></span></code></pre></div><p><strong>Solution</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> console_data:
+</span></span><span style="display:flex;"><span>    lifespan <span style="color:#f92672">=</span> row[<span style="color:#ae81ff">3</span>] <span style="color:#f92672">-</span> row[<span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>    row<span style="color:#f92672">.</span>append(lifespan)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">key</span>(row):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> row[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sorted_lifespan_data <span style="color:#f92672">=</span> sorted(console_data, key<span style="color:#f92672">=</span>key, reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># this code will print your result table</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> sorted_lifespan_data:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> elem <span style="color:#f92672">in</span> row:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>elem<span style="color:#e6db74">:</span><span style="color:#e6db74">&lt;20</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>    print()
+</span></span></code></pre></div><h2 id="the-big-picture-so-far-1">The Big Picture So Far</h2>
+<p>Not only have you shown that you can display your data and select pieces of it using nested list indexing, you&rsquo;ve also successfully performed calculations using columns in your dataset. You performed a single-column calculation when you summed the values in the units sold column to determine the total number of all consoles that were sold. And you performed a multi-column calculation when you subtracted the release year column from the discontinued year column to determine the lifespan metric for each console. Finally, you displayed your metric in an easy-to-understand way by sorting the data before printing it out. Now let&rsquo;s put it all together by calculating another metric: adding the result as a column in our table, and sorting the result all in one go!</p>
+<h2 id="task-7">Task 7</h2>
+<p>Calculate a new metric, total revenue, which we will estimate as the product of release price and the total number of units sold (the last two values in each row). Use a for loop over the rows of <code>console_data</code> to calculate the total revenue and append the result to the end of each row.</p>
+<p>The precode already contains code to sort and print your final result, so leave that as is.</p>
+<p><strong>Hint</strong></p>
+<p>This task is bringing together what you did in the previous two tasks, but with a different metric — so use those two tasks as a template if you get stuck. Your code should have a single for loop that calculates total revenue as the multiplication of the release price and units sold columns for each row in <code>console_data</code> and then appends that result to the end of the row.</p>
+<p><strong>Success text</strong></p>
+<p>You have successfully calculated another metric and included the result in your dataset! So, which is a better metric, console lifetime or total revenue? It depends on the problem at hand, but it&rsquo;s always good to have options.</p>
+<p><strong>Precode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># write your code here</span>
+</span></span><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># this code will sort your results</span>
+</span></span><span style="display:flex;"><span>sorted_revenue_data <span style="color:#f92672">=</span> sorted(console_data, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> row: row[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># this code will print your result table</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> sorted_revenue_data:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> elem <span style="color:#f92672">in</span> row:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>elem<span style="color:#e6db74">:</span><span style="color:#e6db74">&lt;20</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>    print()
+</span></span></code></pre></div><p><strong>Solution</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>console_data <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;NES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1985</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">179.0</span>, <span style="color:#ae81ff">61910000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1989</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">89.99</span>, <span style="color:#ae81ff">118690000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;SNES&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">2003</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">49100000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Virtual Boy&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">1995</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">179.95</span>, <span style="color:#ae81ff">770000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Boy Advance&#39;</span>, <span style="color:#e6db74">&#39;Nintendo&#39;</span>, <span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">2010</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">81510000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Atari 2600&#39;</span>, <span style="color:#e6db74">&#39;Atari&#39;</span>, <span style="color:#ae81ff">1977</span>, <span style="color:#ae81ff">1992</span>, <span style="color:#ae81ff">199.0</span>, <span style="color:#ae81ff">30000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega Genesis&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1988</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">189.0</span>, <span style="color:#ae81ff">30750000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Game Gear&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1990</span>, <span style="color:#ae81ff">1997</span>, <span style="color:#ae81ff">149.99</span>, <span style="color:#ae81ff">10620000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;Sega CD&#39;</span>, <span style="color:#e6db74">&#39;Sega&#39;</span>, <span style="color:#ae81ff">1991</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">2240000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;3DO&#39;</span>, <span style="color:#e6db74">&#39;The 3DO Company&#39;</span>, <span style="color:#ae81ff">1993</span>, <span style="color:#ae81ff">1996</span>, <span style="color:#ae81ff">699.99</span>, <span style="color:#ae81ff">2000000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">1994</span>, <span style="color:#ae81ff">2006</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">102490000</span>],
+</span></span><span style="display:flex;"><span> [<span style="color:#e6db74">&#39;PlayStation 2&#39;</span>, <span style="color:#e6db74">&#39;Sony Electronics&#39;</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2013</span>, <span style="color:#ae81ff">299.0</span>, <span style="color:#ae81ff">155000000</span>]]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> console_data:
+</span></span><span style="display:flex;"><span>    total_revenue <span style="color:#f92672">=</span> row[<span style="color:#ae81ff">4</span>] <span style="color:#f92672">*</span> row[<span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>    row<span style="color:#f92672">.</span>append(total_revenue)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sorted_revenue_data <span style="color:#f92672">=</span> sorted(console_data, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> row: row[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># this code will print your result table</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> sorted_revenue_data:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> elem <span style="color:#f92672">in</span> row:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>elem<span style="color:#e6db74">:</span><span style="color:#e6db74">&lt;20</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>    print()
+</span></span></code></pre></div><h2 id="summary">Summary</h2>
+<p>Nested lists are complex data structures that can take some getting used to, but you&rsquo;re getting the hang of it. In future lessons, you&rsquo;ll learn about more sophisticated data structures in Python to store and work with tables, but the skills you learned here will go a long way in helping you work with them effectively. Writing for loops and nested for loops, performing nested list indexing, formatted printing, and column calculations are just some of the skills you used in this guided case study.</p>
+<p>You were also introduced to the concept of metrics, which are essential in evaluating your analysis and making informed business decisions. As an analyst, you have to be creative in deciding on your metrics because a good metric depends both on the data you have available and the problem that you&rsquo;re trying to solve.</p>
+
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+        <div class="col-md-6 share-buttons">
+        
+            <strong></strong>
+            
+            
+            
+            
+            
+            
+            
+             
+            
+            
+          
+          </div>
+
+        
+        
+        </div>
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row next-prev-navigator">
+  
+  
+</div>
+
+      <hr />
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+      
+  
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:zach@bullard.dev target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>zach@bullard.dev</span>
+                </a></li>
+              
+            
+              
+                <li><span><i class="fas fa-phone-alt"></i></span> <span>601 706 9224</span></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+  </footer>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

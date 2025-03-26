@@ -11,7 +11,26 @@ section:
 # Your experiences
 experiences:
   - company:
-      name: TripleTen (fmr. Practicum)
+      name: BOLD
+      url: "https://www.bold.com"
+      location: Remote
+      # company overview
+      overview: BOLD is a global leader in career development technology, serving over 50M job seekers across 200+ countries. The company provides AI-powered resume and cover letter builders, job search sites, networking platforms, and career productivity tools to help people maximize their career potential.
+    positions:
+      - designation: Product Manager - Global Content
+        start: Apr 2024
+        # don't provide end date if you are currently working there. It will be replaced by "Present"
+        # end: Dec 2020
+        # give some points about what was your responsibilities at the company.
+        responsibilities:
+          - Lead product strategy for BOLD's global content initiatives
+          - Manage and improve educational content across multiple platforms
+          - Design and implement content management systems
+          - Coordinate with cross-functional teams to deliver high-quality educational experiences
+          - Analyze user engagement metrics to drive content improvements
+
+  - company:
+      name: TripleTen
       url: "https://www.tripleten.com"
       location: Belgrade, Serbia
       # company overview
@@ -19,6 +38,7 @@ experiences:
     positions:
       - designation: Product Manager - Data Programs
         start: Feb 2022
+        end: Feb 2024
         # don't provide end date if you are currently working there. It will be replaced by "Present"
         # end: Dec 2020
         # give some points about what was your responsibilities at the company.
