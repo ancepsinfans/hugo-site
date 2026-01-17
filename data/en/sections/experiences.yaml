@@ -33,7 +33,7 @@ experiences:
   - company:
       name: TripleTen
       url: "https://www.tripleten.com"
-      location: remote
+      location: Remote
       # company overview
       overview: TripleTen offers online, self-paced bootcamps in data analysis, data science, quality assurance and software development.
     positions:
