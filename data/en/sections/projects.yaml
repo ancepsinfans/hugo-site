@@ -21,8 +21,12 @@ buttons:
 
 # your projects
 projects:
+  - name: Personal Homelab
+    summary: "I run a homelab on a Minisforum MS-01 where I securely host family photos and document storage, family genealogy, and many custom web apps. Additionally, running Home Assistant OS on a NUC11 with custom libraries for managing the family's smart devices."
+    tags: ["hobby", "homelab", "self-hosting"]
+
   - name: Student Reports
-    url: https://student-reports.vercel.app/f0b995c5a2f7a48a
+    # url: https://student-reports.vercel.app/f0b995c5a2f7a48a
     summary: "I conducted pipeline for automating weekly student report generation. After analyzing data about learning performance and platform activity, the results are sent to this React-based site for rendering, and links are automatically sent to students. All user data is anonymized on site and never is exposed."
     tags: ["data analysis", "react", "nextjs", "python"]
   
@@ -60,7 +64,7 @@ projects:
     tags: ["hobby", "game", "react"]
 
   - name: Skills Graph
-    url: https://skills-graph.vercel.app/test
+    # url: https://skills-graph.vercel.app/test
     summary: "I created a site/management system for recording, storing, and presenting student scores on tests of soft and hard skills."
     tags: ["data analysis", "mongodb", "nextjs", "react"]
 

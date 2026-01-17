@@ -17,27 +17,28 @@ experiences:
       # company overview
       overview: BOLD is a global leader in career development technology, serving over 50M job seekers across 200+ countries. The company provides AI-powered resume and cover letter builders, job search sites, networking platforms, and career productivity tools to help people maximize their career potential.
     positions:
-      - designation: Product Manager - Global Content
+      - designation: Product Manager II
         start: Apr 2024
         # don't provide end date if you are currently working there. It will be replaced by "Present"
         # end: Dec 2020
         # give some points about what was your responsibilities at the company.
         responsibilities:
           - Lead product strategy for BOLD's global content initiatives
-          - Manage and improve educational content across multiple platforms
-          - Design and implement content management systems
-          - Coordinate with cross-functional teams to deliver high-quality educational experiences
+          - Manage and improve career docs content delivery across multiple platforms
+          - Design and implement AI augmented content creation solutions
+          - Coordinate with cross-functional teams to deliver high-quality experiences
           - Analyze user engagement metrics to drive content improvements
+          - Responsible for more than $3M in annualized revenue through A/B testing
 
   - company:
       name: TripleTen
       url: "https://www.tripleten.com"
-      location: Belgrade, Serbia
+      location: remote
       # company overview
       overview: TripleTen offers online, self-paced bootcamps in data analysis, data science, quality assurance and software development.
     positions:
       - designation: Product Manager - Data Programs
-        start: Feb 2022
+        start: Dec 2020
         end: Feb 2024
         # don't provide end date if you are currently working there. It will be replaced by "Present"
         # end: Dec 2020
@@ -51,8 +52,8 @@ experiences:
           - Coordinate with Development, Guidance, and Analytics teams to achieve business goals.
 
       - designation: Data Programs Content Lead
-        start: Dec 2020
-        end: Feb 2022
+        start: Feb 2020
+        end: Dec 2020
         responsibilities:
           - Lead a content team of 15 people.
           - Maintain and improve educational content.
@@ -60,13 +61,6 @@ experiences:
           - Design and develop videos to supplement lessons.
           - Design interactives to boost student engagement.
           - Monitor, analyze, and report on metrics for user engagement and students' educational success.
-
-      - designation: Lead Data Editor
-        start: Feb 2020
-        end: Dec 2020
-        responsibilities:
-          - Edit course content for the Data Science track.
-          - Edit marketing materials, including ads, banners, and blog posts.
           - Create and maintain company-wide style guide for educational materials and external communication.
 
   - company:

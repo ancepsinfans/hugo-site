@@ -7,7 +7,7 @@ section:
   template: sections/about.html #
 
 # your designation
-designation: Product Manager - Global Content
+designation: Product Manager II
 # your company information
 company:
   name: BOLD
@@ -25,13 +25,13 @@ socialLinks:
     icon: "fas fa-envelope"
     url: "zach@bullard.dev"
 
-  - name: Github
-    icon: "fab fa-github"
-    url: "https://www.github.com/ancepsinfans"
-
   - name: LinkedIn
     icon: "fab fa-linkedin"
     url: "https://www.linkedin.com/in/zach-bullard"
+
+  - name: Github
+    icon: "fab fa-github"
+    url: "https://www.github.com/ancepsinfans"
 
   - name: Goodreads
     icon: "fab fa-goodreads"
@@ -60,8 +60,6 @@ badges:
     name: Agile
     percentage: 100
     color: blue
-
-  - type: soft-skill-indicator
     name: Product Management
     percentage: 100
     color: yellow
