@@ -20,7 +20,7 @@ skills:
     summary: Generative AI workflows, prompt engineering, AI/human content design, evaluation frameworks.
 
   - name: Data & Analytics
-    logo: images/sections/skills/c.png
+    logo: images/sections/skills/c++.png
     summary: Python, Pandas, scikit-learn, funnel/cohort analysis, dashboards (Excel, Dash).
 
   - name: Engineering‑adjacent
