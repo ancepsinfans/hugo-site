@@ -10,6 +10,7 @@ section:
 
 # Your Skills.
 # Give a summary of you each skill in the summary section.
+skills:
   - name: Product & Strategy
     logo: images/sections/skills/go.png
     summary: Roadmapping, discovery, A/B testing, PLG funnels, KPI design, stakeholder management.
