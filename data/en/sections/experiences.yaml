@@ -18,8 +18,8 @@ experiences:
       - designation: Product Manager II, Global Content
         start: Apr 2024
         responsibilities:
-          - "Lead product for AI-generated career document content across 6 projects, combining generative AI with human curation to lift conversion by 2% and generate $4M annualized revenue."
-          - "Own end-to-end lifecycle from discovery to iteration—defining KPIs, running experiments, coordinating design/eng/data to ship on-time and reduce post-release issues by 25%."
+          - "Lead product for AI-generated career document content across 10+ projects, combining generative AI with human curation to lift conversion by over 3% and generate $6M+ annualized revenue."
+          - "Own end-to-end lifecycle from discovery to iteration—defining KPIs, running experiments, coordinating design/eng/data to ship on-time and reduce post-release issues by 40%."
           - "Design AI/human workflows balancing quality, speed, and cost, including prompt strategies and internal tooling for editors."
           - "Build/maintain user stories, specs, and experiment plans that align cross-functional teams."
 
@@ -30,13 +30,15 @@ experiences:
       overview: TripleTen offers online bootcamps in data analysis, data science, QA, and software development.
     positions:
       - designation: Product Manager, Data Programs
-        start: Dec 2020
+        start: Apr 2021
         end: Feb 2024
         responsibilities:
-          - "Owned strategy/roadmap for Data Science and Data Analyst programs serving Xk+ learners, leading 25-person cross-functional team across content, engineering, student support."
+          - "Owned strategy/roadmap for Data Science and Data Analyst programs, leading 25-person cross-functional team across content, engineering, student support."
           - "Reduced drop/refund rate QoQ by improving onboarding, pacing, and early intervention triggers informed by cohort analysis and feedback."
-          - "Launched program features (capstone redesign, project feedback tooling) that increased completion rates and improved NPS by X points."
+          - "Launched program features (capstone redesign, project feedback tooling) that increased completion rates and improved NPS by 1.5 points."
       - designation: Data Programs Content Lead
+        start: Dec 2020
+        end: Apr 2021
   - company:
       name: Moscow Lyceum Stupeni
       url: "https://www.stupeni-lyceum.ru/"

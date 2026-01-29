@@ -20,7 +20,7 @@ summary: |
   Product manager building AI-powered learning and content tools.
   
   I’ve spent 6+ years leading product for AI writing tools, data education bootcamps, and internal data platforms—after 10 years teaching English and studying psychology. 
-  Recently, I shipped a generative-AI content strategy that lifted conversion by 2% and added $4M in annualized revenue. I combine hands-on Python/JS with deep pedagogy to design AI/human workflows and ship features that move key metrics.
+  Recently, I shipped three generative-AI content solutions that lifted conversion by over 3% and added $6M+ in annualized revenue. I combine deep technical knowledge with user-centered design to move key metrics.
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -51,7 +51,8 @@ badges:
     percentage: 100
     color: "#00ACC1"
   - type: soft-skill-indicator  
-    name: AI Product Design
+    name: |
+      Product Design
     percentage: 95
     color: "#AB47BC"
   - type: soft-skill-indicator

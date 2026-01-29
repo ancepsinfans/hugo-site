@@ -18,7 +18,7 @@ buttons:
 projects:
   # Case Studies (tags: "case-study")
   - name: AI Content Strategy for Career Documents
-    summary: "Generative AI + human curation → 2% conversion lift, $4M annualized revenue."
+    summary: "Generative AI + human curation → >3% conversion lift, $6M+ annualized revenue."
     tags: ["case-study", "ai", "bold"]
     url: "/case-studies/ai-content"
 
