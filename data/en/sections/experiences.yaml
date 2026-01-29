@@ -12,57 +12,32 @@ section:
 experiences:
   - company:
       name: BOLD
-      url: "https://www.bold.com"
+      url: https://www.bold.com
       location: Remote
-      # company overview
-      overview: BOLD is a global leader in career development technology, serving over 50M job seekers across 200+ countries. The company provides AI-powered resume and cover letter builders, job search sites, networking platforms, and career productivity tools to help people maximize their career potential.
     positions:
-      - designation: Product Manager II
+      - designation: Product Manager II, Global Content
         start: Apr 2024
-        # don't provide end date if you are currently working there. It will be replaced by "Present"
-        # end: Dec 2020
-        # give some points about what was your responsibilities at the company.
         responsibilities:
-          - Lead product strategy for BOLD's global content initiatives
-          - Manage and improve career docs content delivery across multiple platforms
-          - Design and implement AI augmented content creation solutions
-          - Coordinate with cross-functional teams to deliver high-quality experiences
-          - Analyze user engagement metrics to drive content improvements
-          - Responsible for more than $3M in annualized revenue through A/B testing
+          - "Lead product for AI-generated career document content across 6 projects, combining generative AI with human curation to lift conversion by 2% and generate $4M annualized revenue."
+          - "Own end-to-end lifecycle from discovery to iteration—defining KPIs, running experiments, coordinating design/eng/data to ship on-time and reduce post-release issues by 25%."
+          - "Design AI/human workflows balancing quality, speed, and cost, including prompt strategies and internal tooling for editors."
+          - "Build/maintain user stories, specs, and experiment plans that align cross-functional teams."
 
   - company:
-      name: TripleTen
-      url: "https://www.tripleten.com"
+      name: TripleTen (formerly Yandex.Practicum)
+      url: https://www.tripleten.com
       location: Remote
-      # company overview
-      overview: TripleTen offers online, self-paced bootcamps in data analysis, data science, quality assurance and software development.
+      overview: |
+      TripleTen offers online bootcamps in data analysis, data science, QA, and software development. 
     positions:
-      - designation: Product Manager - Data Programs
+      - designation: Product Manager, Data Programs
         start: Dec 2020
         end: Feb 2024
-        # don't provide end date if you are currently working there. It will be replaced by "Present"
-        # end: Dec 2020
-        # give some points about what was your responsibilities at the company.
         responsibilities:
-          - Lead a product team of 25 people.
-          - Reduce drop/refund rates consistently quarter-on-quarter.
-          - Design, develop, and evaluate data-driven solutions to challenges for the product.
-          - Own agile sprint cycle for the team.
-          - Organize quarterly project planning.
-          - Coordinate with Development, Guidance, and Analytics teams to achieve business goals.
-
+          - "Owned strategy/roadmap for Data Science and Data Analyst programs serving Xk+ learners, leading 25-person cross-functional team across content, engineering, student support."
+          - "Reduced drop/refund rate QoQ by improving onboarding, pacing, and early intervention triggers informed by cohort analysis and feedback."
+          - "Launched program features (capstone redesign, project feedback tooling) that increased completion rates and improved NPS by X points."
       - designation: Data Programs Content Lead
-        start: Feb 2020
-        end: Dec 2020
-        responsibilities:
-          - Lead a content team of 15 people.
-          - Maintain and improve educational content.
-          - Design, develop and manage a [content knowledge base](tripleten.netlify.app) that allows students to review topics and broaden their learning experience.
-          - Design and develop videos to supplement lessons.
-          - Design interactives to boost student engagement.
-          - Monitor, analyze, and report on metrics for user engagement and students' educational success.
-          - Create and maintain company-wide style guide for educational materials and external communication.
-
   - company:
       name: Moscow Lyceum Stupeni
       url: "https://www.stupeni-lyceum.ru/"
@@ -73,13 +48,8 @@ experiences:
         start: Aug 2015
         end: Dec 2020
         responsibilities:
-          - Design and lead lessons for students of the 2nd to 11th grades.
-          - Create the English language curricula.
-          - Prepare students for international English exams ([Cambridge](https://www.cambridgeenglish.org/exams-and-tests/), [IELTS](https://www.ielts.org/), [TOEFL](https://www.ets.org/toefl/))
-          - Plan and lead weekly theater lessons, organize annual performances.
-          - Organize and prepare students for an annunal interscholastic Lincoln-Douglas debate tournament / create an automated tabulation system for results.
-          - Create and maintain an electronic database of teaching materials for the foreign languages staff.
-
+          - "Designed English curricula for grades 2–11 and prepared students for Cambridge/IELTS/TOEFL exams (100% pass rate)."
+          - "Led weekly theater program and annual debate tournament; built automated tabulation system for results and maintained digital teaching materials database for foreign language staff."
   - company:
       name: The American Home
       url: "http://www.ah33.ru/teach-english/"
@@ -90,7 +60,5 @@ experiences:
         start: Aug 2012
         end: Jul 2015
         responsibilities:
-          - Design and lead lessons to students from beginner to advanced.
-          - Organize weekly cultural events and lectures.
-          - Edit and author course books.
-          - Create an automated system for recording grades and assigning/tracking homework.
+          - "Designed/delivered lessons from beginner to advanced levels; organized weekly cultural events and lectures."
+          - "Authored/edited course books and built automated grade/homework tracking system for 100+ students."

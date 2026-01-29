@@ -7,7 +7,7 @@ section:
   template: sections/about.html #
 
 # your designation
-designation: Product Manager II
+designation: Product Manager II, AI & Content
 # your company information
 company:
   name: BOLD
@@ -16,7 +16,11 @@ company:
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: "I'm a skilled product manager, an organized and systematic thinker with a high attention to detail. I enjoy using my strengths in math and language and interest in programming and learning new things to solve problems."
+summary: |
+  Product manager building AI-powered learning and content tools.
+  
+  I’ve spent 6+ years leading product for AI writing tools, data education bootcamps, and internal data platforms—after 10 years teaching English and studying psychology. 
+  Recently, I shipped a generative-AI content strategy that lifted conversion by 2% and added $4M in annualized revenue. I combine hands-on Python/JS with deep pedagogy to design AI/human workflows and ship features that move key metrics.
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -40,31 +44,29 @@ socialLinks:
 # Show your badges
 # You can show your verifiable certificates from https://www.credly.com.
 # You can also show a circular bar indicating the level of expertise on a certain skill
+
 badges:
   - type: soft-skill-indicator
-    name: Python
-    percentage: 90
-    color: green
-
-  - type: soft-skill-indicator
-    name: React
-    percentage: 85
-    color: "#f7DD4A"
-
-  - type: soft-skill-indicator
-    name: Russian Language (C2)
+    name: Product Strategy
     percentage: 100
-    color: "#c23d32"
-
-  - type: soft-skill-indicator
-    name: Agile
-    percentage: 100
-    color: blue
-    name: Product Management
-    percentage: 100
-    color: yellow
-
-  - type: soft-skill-indicator
-    name: Hard-working
+    color: "#00ACC1"
+  - type: soft-skill-indicator  
+    name: AI Product Design
     percentage: 95
-    color: "#773d3b"
+    color: "#AB47BC"
+  - type: soft-skill-indicator
+    name: Python / JS
+    percentage: 90
+    color: "#26A69A"
+  - type: soft-skill-indicator
+    name: Learning Design
+    percentage: 95
+    color: "#FF7043"
+  - type: soft-skill-indicator
+    name: Experimentation
+    percentage: 90
+    color: "#42A5F5"
+  - type: soft-skill-indicator
+    name: Russian (C2 fluent)
+    percentage: 100
+    color: "#C23D32"

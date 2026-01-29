@@ -10,79 +10,144 @@ section:
 
 # filter buttons
 buttons:
+  - name: Case Studies
+    filter: case-study
   - name: All
-    filter: "all"
-  - name: React
-    filter: "react"
-  - name: Data Analysis
-    filter: "data analysis"
-  - name: Hobby
-    filter: "hobby"
-
+    filter: all
 # your projects
 projects:
-  - name: Personal Homelab
-    summary: "I run a homelab on a Minisforum MS-01 where I securely host family photos and document storage, family genealogy, and many custom web apps. Additionally, running Home Assistant OS on a NUC11 with custom libraries for managing the family's smart devices."
-    tags: ["hobby", "homelab", "self-hosting"]
+  # Case Studies (tags: "case-study")
+  - name: AI Content Strategy for Career Documents
+    summary: "Generative AI + human curation → 2% conversion lift, $4M annualized revenue."
+    tags: ["case-study", "ai", "bold"]
+    url: "/case-studies/ai-content"
 
-  - name: Student Reports
-    # url: https://student-reports.vercel.app/f0b995c5a2f7a48a
-    summary: "I conducted pipeline for automating weekly student report generation. After analyzing data about learning performance and platform activity, the results are sent to this React-based site for rendering, and links are automatically sent to students. All user data is anonymized on site and never is exposed."
-    tags: ["data analysis", "react", "nextjs", "python"]
-  
-  - name: LLM-based Chatbot
-    summary: "I built a chatbot for TripleTen's student Discord space based on Llama2. The bot is complete with a vectorized database of our content so that students can get accurate and specific help with their program tasks in real-time."
-    tags: ["chatbot", "LLM"]
+  - name: Drop/Refund Reduction – Data Programs
+    summary: "Redesigned onboarding/interventions → reduced drop/refund rate QoQ."
+    tags: ["case-study", "edtech", "tripleten"]
+    url: "/case-studies/drop-refund"
+
+  - name: Internal Ranking Platform – Chill Subs
+    summary: "Python pipelines + unified ranking → faster editorial decisions."
+    tags: ["case-study", "data-platform", "python"]
+    url: "/case-studies/ranking-platform"
+
+  # Supporting Projects
+  - name: Student Reports Pipeline
+    summary: "Automated weekly student reports with privacy-first React dashboard."
+    tags: ["data-analysis", "react", "python"]
+    url: "https://student-reports.vercel.app/..."
+
+  - name: LLM Chatbot – TripleTen Discord
+    summary: "Llama2 + vectorized knowledge base for real-time student support."
+    tags: ["chatbot", "llm", "edtech"]
 
   - name: Content Knowledge Base
-    # role: Creator/Curator
-    #repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-    url: "https://tripleten.netlify.app" # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-    summary: We created a site for reviewing course materials connected with each of the units of our program. Students can also find other additional information such as how to set up local environments, tools that we recommend to aid the learning process, and extra reading.
-    tags: ["gatsby", "react"]
-
-  - name: Discord Bot
-    summary: "I created a bot for managing student interactions in the discord server for Practicum's programs. Features include: saving marked messages, leaving anonymous posts/questions, tracking open questions for monitoring SLA, matching students with similar progress for group work. Additionally, wrote, maintained, and analyzed student behavioral data and server 'health' based on the Discord API."
-    tags: ["discord", "bot", "data analysis", "react"]
-  
-  - name: Interactives
-    # role: Project Manager
-    #repo: https://github.com/tensorflow/tensorflow
-    url: "/posts/interactives/"
-    summary: We design interactive widgets meant to enrich the student learning experience and help turn online learning into something you can touch.
-    tags: ["javascript", "data analysis"]
-
-  - name: Educational Videos
-    # role: Project Manager
-    url: "posts/videos"
-    summary: Videos designed to accompany the text-based lesson material in the form of project guides, extra material, and alternatives to reading.
-    tags: ["video", "script-writing", "motion design"]
-  
-  - name: Wordle Clone
-    url: "https://gamething.vercel.app"
-    summary: "I created a wordle clone with a few extra features: a tracker for average number of attempts and a 'low power' mode which renders one column useless (for a little extra challenge)"
-    tags: ["hobby", "game", "react"]
+    summary: "Student curriculum review site + environment setup guides."
+    tags: ["gatsby", "react", "edtech"]
 
   - name: Skills Graph
-    # url: https://skills-graph.vercel.app/test
-    summary: "I created a site/management system for recording, storing, and presenting student scores on tests of soft and hard skills."
-    tags: ["data analysis", "mongodb", "nextjs", "react"]
+    summary: "Student soft/hard skills tracking and visualization system."
+    tags: ["mongodb", "nextjs", "edtech"]
 
-  - name: School 🙃
-    url: "https://new-school.vercel.app"
-    summary: "I built a prototype of a platform for learning new information. This platform features learning paths, user account pages, personal and population analytics, quizzes, popovers, and more. "
-    tags: ["hobby", "mongodb", "nextjs", "edtech", "react"]
+  # Personality Flex
+  - name: Personal Homelab
+    summary: "Self-hosting genealogy, photos, Home Assistant on Minisforum MS-01."
+    tags: ["hobby", "homelab", "self-hosting"]
 
-  - name: Personality Test
-    # role: Project Manager
-    #repo:
-    url: "https://b5-web.vercel.app"
-    summary: We created a site for conducting personality tests based on the Big 5 framework. The goals of the project were to get more insights into students to help retention, tailor the learning experience to their needs, and also to provide them with a fun project in analyzing the results.
-    tags: ["big five", "Johnson inventory", "react"]
+  - name: School Prototype
+    summary: "EdTech MVP: learning paths, quizzes, population analytics."
+    tags: ["edtech", "mongodb", "nextjs"]
 
-  - name: Congressional speech analysis
-    # role: Owner
-    # timeline: "2020 - 2021"
-    repo: https://github.com/ancepsinfans/speeches
-    summary: This project contains a preliminary analysis of Congressional floor speeches given by the members of congress. Among the results of the analysis, I found that speech patterns could predict relative age well. Additionally, there were differences in the emotional valence of speeches given by Democrats vs those given by Republicans.
-    tags: ["hobby", "python", "NLP", "data analysis", "politics"]
+  - name: Congressional Speech Analysis
+    summary: "NLP: Predict Congress member age from speech patterns; partisan sentiment."
+    tags: ["hobby", "python", "nlp"]
+
+
+
+
+
+# --------------------- <=2025
+# projects:
+#   # Featured case studies (use these as your "hero" projects)
+#   - name: AI Content Strategy for Career Documents
+#     summary: "Combined generative AI with human curation across 10+ projects to lift conversion by 2% and generate over $6M annualized revenue."
+#     tags: ["case-study", "ai", "bold"]
+#     # url: "/case-studies/ai-content-career-docs"  # Create dedicated page
+#     repo: ""  
+
+#   - name: Drop/Refund Reduction – Data Programs
+#     summary: "Reduced drop/refund rate QoQ across Data Science/Analyst programs by redesigning onboarding and intervention triggers."
+#     tags: ["case-study", "edtech", "tripleten"]
+#     url: "/case-studies/drop-refund-reduction"
+
+#   - name: Internal Ranking Platform – Chill Subs
+#     summary: "Built Python data pipelines and unified ranking system that reduced manual ops and improved editorial decisions."
+#     tags: ["case-study", "data-platform", "python"]
+
+#   # Other projects (compressed 1-line descriptions)
+#   - name: Personal Homelab
+#     summary: "Self-hosted family photos, genealogy, Home Assistant, and custom web apps on Minisforum MS-01."
+#     tags: ["hobby", "homelab"]
+
+#   - name: Student Reports Pipeline
+#     summary: "Automated weekly student report generation with anonymized React dashboard."
+#     tags: ["data-analysis", "react", "python"]
+
+  
+#   - name: LLM-based Chatbot (TripleTen Discord)
+#     summary: "Vectorized knowledge base for real-time student help. Llama2-powered."
+#     tags: ["chatbot", "LLM"]
+
+#   - name: Content Knowledge Base
+#     # role: Creator/Curator
+#     #repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+#     url: "https://tripleten.netlify.app" # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+#     summary: Student-facing site for curriculum review + setup guides. Gatsby/React.
+#     tags: ["gatsby", "react"]
+
+  # - name: Discord Bot
+  #   summary: "I created a bot for managing student interactions in the discord server for Practicum's programs. Features include: saving marked messages, leaving anonymous posts/questions, tracking open questions for monitoring SLA, matching students with similar progress for group work. Additionally, wrote, maintained, and analyzed student behavioral data and server 'health' based on the Discord API."
+  #   tags: ["discord", "bot", "data analysis", "react"]
+  
+  # - name: Interactives
+  #   # role: Project Manager
+  #   #repo: https://github.com/tensorflow/tensorflow
+  #   url: "/posts/interactives/"
+  #   summary: We design interactive widgets meant to enrich the student learning experience and help turn online learning into something you can touch.
+  #   tags: ["javascript", "data analysis"]
+
+  # - name: Educational Videos
+  #   # role: Project Manager
+  #   url: "posts/videos"
+  #   summary: Videos designed to accompany the text-based lesson material in the form of project guides, extra material, and alternatives to reading.
+  #   tags: ["video", "script-writing", "motion design"]
+  
+  # - name: Wordle Clone
+  #   url: "https://gamething.vercel.app"
+  #   summary: "I created a wordle clone with a few extra features: a tracker for average number of attempts and a 'low power' mode which renders one column useless (for a little extra challenge)"
+  #   tags: ["hobby", "game", "react"]
+
+  # - name: Skills Graph
+  #   # url: https://skills-graph.vercel.app/test
+  #   summary: "Student soft/hard skills tracking system. MongoDB + Next.js."
+  #   tags: ["data analysis", "mongodb", "nextjs", "react"]
+
+  # - name: School 🙃
+  #   url: "https://new-school.vercel.app"
+  #   summary: "I built a prototype of a platform for learning new information. This platform features learning paths, user account pages, personal and population analytics, quizzes, popovers, and more. "
+  #   tags: ["hobby", "mongodb", "nextjs", "edtech", "react"]
+
+  # - name: Personality Test
+  #   # role: Project Manager
+  #   #repo:
+  #   url: "https://b5-web.vercel.app"
+  #   summary: We created a site for conducting personality tests based on the Big 5 framework. The goals of the project were to get more insights into students to help retention, tailor the learning experience to their needs, and also to provide them with a fun project in analyzing the results.
+  #   tags: ["big five", "Johnson inventory", "react"]
+
+  # - name: Congressional Speech Analysis
+  #   # role: Owner
+  #   # timeline: "2020 - 2021"
+  #   repo: https://github.com/ancepsinfans/speeches
+  #   summary: NLP on Congress speeches: age prediction, partisan sentiment. Python.
+  #   tags: ["hobby", "python", "NLP", "data analysis", "politics"]
