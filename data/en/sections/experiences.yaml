@@ -27,8 +27,7 @@ experiences:
       name: TripleTen (formerly Yandex.Practicum)
       url: https://www.tripleten.com
       location: Remote
-      overview: |
-      TripleTen offers online bootcamps in data analysis, data science, QA, and software development. 
+      overview: TripleTen offers online bootcamps in data analysis, data science, QA, and software development.
     positions:
       - designation: Product Manager, Data Programs
         start: Dec 2020
