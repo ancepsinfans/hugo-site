@@ -17,14 +17,14 @@ buttons:
 # your projects
 projects:
   # Case Studies (tags: "case-study")
-  - name: AI Content Strategy for Career Documents
-    summary: "Generative AI + human curation → >3% conversion lift, $6M+ annualized revenue."
-    tags: ["case-study", "ai", "bold"]
-    url: "/case-studies/ai-content"
+  - name: AI Content Platform - Product Area Ownership
+    summary: "Built and scaled 8-API platform serving 35-40 global portals with $10M+ annual revenue. Designed prompt architecture framework, launched resume personalization and job title recommendation from 0-to-1, established multi-LLM evaluation process. Grew platform revenue 2.5x through systematic experimentation achieving >3% average conversion lift."
+    tags: ["case-study", "ai", "platform", "apis"]
+    url: "/case-studies/ai-content-platform"
 
-  - name: Drop/Refund Reduction – Data Programs
-    summary: "Redesigned onboarding/interventions → reduced drop/refund rate QoQ."
-    tags: ["case-study", "edtech", "tripleten"]
+  - name: Drop/Refund Reduction - Data Programs
+    summary: "Led data-driven intervention strategy across Data Science/Analyst bootcamps serving 1,000+ students. Redesigned onboarding, implemented predictive early-warning system, improved pacing through cohort analysis. Reduced drop/refund rate QoQ and increased NPS by 1.5 points."
+    tags: ["case-study", "edtech", "data-analysis"]
     url: "/case-studies/drop-refund"
 
   - name: Internal Ranking Platform – Chill Subs

@@ -11,22 +11,23 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-  - name: Product & Strategy
+  - name: Product Leadership & Strategy
     logo: images/sections/skills/go.png
-    summary: Roadmapping, discovery, A/B testing, PLG funnels, KPI design, stakeholder management.
+    summary: Roadmapping, product vision, discovery, stakeholder management, cross-functional team leadership, P&L ownership, executive communication.
 
-  - name: AI & Content  
+
+  - name: AI & Platform Products  
     logo: images/sections/skills/cloud.png
-    summary: Generative AI workflows, prompt engineering, AI/human content design, evaluation frameworks.
+    summary: AI/ML product development, prompt engineering, multi-LLM evaluation (OpenAI, Anthropic, Gemini), API product management, platform architecture, JSON schema design.
 
-  - name: Data & Analytics
+  - name: Data & Experimentation
     logo: images/sections/skills/c++.png
-    summary: Python, Pandas, scikit-learn, funnel/cohort analysis, dashboards (Excel, Dash).
+    summary: A/B testing, cohort analysis, funnel optimization, KPI design, SQL, Python (Pandas, scikit-learn), statistical analysis, dashboard development.
 
-  - name: Engineering‑adjacent
+  - name: Technical Product Skills
     logo: images/sections/skills/kubernetes.png
-    summary: JavaScript, React, MongoDB—for prototyping, internal tools, and data plumbing.
+    summary: API design, system architecture, Python/JavaScript for prototyping, React, MongoDB, prompt templating systems, evaluation frameworks.
 
-  - name: Russian Language
+  - name: Languages
     logo: images/sections/skills/prometheus.png
-    summary: "C2 fluent non-native speaker. Led Yandex product teams in Russian for 4 years. Lived/worked in Moscow 10+ years."
+    summary: "English (native), Russian (C2 fluent) - managed bilingual product teams and served Russian-speaking markets for 10+ years."

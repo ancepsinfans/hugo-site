@@ -17,10 +17,11 @@ resume: "files/resume.pdf"
 
 # a summary about you
 summary: |
-  Product manager building AI-powered learning and content tools.
+  Product manager building AI-powered platforms that scale globally.
   
-  I’ve spent 6+ years leading product for AI writing tools, data education bootcamps, and internal data platforms—after 10 years teaching English and studying psychology. 
-  Recently, I shipped three generative-AI content solutions that lifted conversion by over 3% and added $6M+ in annualized revenue. I combine deep technical knowledge with user-centered design to move key metrics.
+  I own a $10M+ AI content platform at BOLD serving 35-40 resume/cover letter portals across 15+ languages. I design prompt architectures, lead multi-LLM evaluation, and drive product strategy from vision to execution. My work combines deep technical knowledge (API design, prompt engineering, evaluation frameworks) with business impact (2.5x revenue growth, >3% conversion lift, 40% defect reduction).
+  
+  Previously led data education programs at TripleTen (Yandex), and spent 10 years teaching English in Russia—experience that informs my user-centered approach to complex product problems. I build systems where none exist, lead through influence, and deliver measurable results in ambiguous environments.
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

@@ -18,10 +18,11 @@ experiences:
       - designation: Product Manager II, Global Content
         start: Apr 2024
         responsibilities:
-          - "Lead product for AI-generated career document content across 10+ projects, combining generative AI with human curation to lift conversion by over 3% and generate $6M+ annualized revenue."
-          - "Own end-to-end lifecycle from discovery to iteration—defining KPIs, running experiments, coordinating design/eng/data to ship on-time and reduce post-release issues by 40%."
-          - "Design AI/human workflows balancing quality, speed, and cost, including prompt strategies and internal tooling for editors."
-          - "Build/maintain user stories, specs, and experiment plans that align cross-functional teams."
+          - "Own AI content platform serving 35-40 resume/cover letter portals across 15+ languages: 8 production API products (Work History, Skills, Summary, Cover Letter content delivery; Enhancement APIs; Resume/CL Personalization; Job Title Recommender) generating $10M+ annual revenue with 92% of team's monthly impact."
+          - "Lead shared cross-functional team of 14-15 (engineers, data scientists, content specialists, UX) as primary stakeholder; present product strategy and performance biweekly to CPO and product leadership. Built prompt engineering capability within content team through hands-on training and framework development."
+          - "Designed prompt architecture framework enabling live variable-based generation and JSON output structures for production APIs; pioneered migration from static content generation to dynamic, API-driven personalization. Created 18-month product vision and maintain autonomous roadmap (60% strategic initiatives, 40% cross-portal partnerships)."
+          - "Launched resume-to-job-ad tailoring API and job title recommender from 0-to-1; established multi-provider LLM evaluation process (OpenAI, Anthropic, Gemini) and prompt library reused across platform. Make independent decisions on LLM provider selection, technical architecture, and feature prioritization."
+          - "Grew platform revenue 2.5x from $4M to $10M+ annually; achieved >3% average conversion lift across experiments, 40% year-over-year reduction in post-release defects through systematic UAT processes. Track portfolio metrics including content add rate, adds per user, time on page, and engagement across culturally-specific implementations."
 
   - company:
       name: TripleTen (formerly Yandex.Practicum)
@@ -33,12 +34,16 @@ experiences:
         start: Apr 2021
         end: Feb 2024
         responsibilities:
-          - "Owned strategy/roadmap for Data Science and Data Analyst programs, leading 25-person cross-functional team across content, engineering, student support."
-          - "Reduced drop/refund rate QoQ by improving onboarding, pacing, and early intervention triggers informed by cohort analysis and feedback."
-          - "Launched program features (capstone redesign, project feedback tooling) that increased completion rates and improved NPS by 1.5 points."
+          - "Owned strategy and roadmap for Data Science and Data Analyst bootcamp programs, leading 25-person cross-functional team (content, engineering, student support) serving 1,000+ students annually across English and Russian markets."
+          - "Reduced drop/refund rate quarter-over-quarter through data-driven interventions: redesigned onboarding experience, implemented early-warning triggers via cohort analysis, and improved pacing based on student feedback loops. Increased program completion rates and lifted NPS by 1.5 points."
+          - "Launched capstone project redesign and automated project feedback tooling; built internal analytics dashboards and student progress tracking systems. Collaborated with data science team to develop predictive models for student success."
+          - "Managed program P&L and revenue targets; presented quarterly business reviews to executive leadership. Balanced student experience optimization with business metrics (retention, completion, satisfaction)."
       - designation: Data Programs Content Lead
         start: Dec 2020
         end: Apr 2021
+        responsibilities:
+          - "Built and scaled 15-person content team; established English-language style guides, knowledge base systems, and video/design production workflows. Created processes for proactive content monitoring enabling faster curriculum iteration."
+
   - company:
       name: Moscow Lyceum Stupeni
       url: "https://www.stupeni-lyceum.ru/"
@@ -49,8 +54,8 @@ experiences:
         start: Aug 2015
         end: Dec 2020
         responsibilities:
-          - "Designed English curricula for grades 2–11 and prepared students for Cambridge/IELTS/TOEFL exams (100% pass rate)."
-          - "Led weekly theater program and annual debate tournament; built automated tabulation system for results and maintained digital teaching materials database for foreign language staff."
+          - "Designed English curricula for grades 2-11; achieved 100% student pass rate on Cambridge/IELTS/TOEFL exams through systematic curriculum development and individual progress tracking."
+          - "Built automated systems for debate tournament tabulation, digital teaching materials database, and student performance tracking. Led weekly theater program and annual debate competitions."
   - company:
       name: The American Home
       url: "http://www.ah33.ru/teach-english/"
