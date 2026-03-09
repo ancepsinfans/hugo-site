@@ -2,7 +2,7 @@
 name: "Zachary Bullard"
 nickname: "Zach"
 # greeting message before your name. it will default to "Hi! I am" if not provided
-greeting: "Hi, I'm"
+greeting: "Hi, I'm Zach"
 image: "images/author/profile.jpg"
 # give your some contact information. they will be used in the footer
 contactInfo:
@@ -11,10 +11,10 @@ contactInfo:
 
 # some summary about what you do
 summary:
-  - I'm a Product Manager
-  - I build creative solutions
-  - Organization is my strong suit
+  - I build AI platforms at global scale
+  - I turn prompts into production systems
+  - I think in systems, not features
 
 
-role: Product Manager II (AI & Content)
+role: Product Manager, AI Content Platform at BOLD
 bio: "Building AI-powered learning and content products. 6+ years PM, 10 years teaching."

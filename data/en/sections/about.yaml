@@ -7,7 +7,7 @@ section:
   template: sections/about.html #
 
 # your designation
-designation: Product Manager II, AI & Content
+designation: Product Manager, AI Content Platform
 # your company information
 company:
   name: BOLD

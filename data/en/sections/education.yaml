@@ -30,12 +30,12 @@ degrees:
       - Volunteered at Vanderbilt University Theatre, Tech Department
       - Hosted a weekly radio program at WRVU
 
-  - name: Secondary School Certificate
-    icon: fa-school
-    timeframe: 2004-2008
-    institution:
-      name: St. Andrew's Episcopal School
-    grade: #(optional)
-      scale: GPA
-      achieved: 4.18
-      outOf: 4
+  # - name: Secondary School Certificate
+  #   icon: fa-school
+  #   timeframe: 2004-2008
+  #   institution:
+  #     name: St. Andrew's Episcopal School
+  #   grade: #(optional)
+  #     scale: GPA
+  #     achieved: 4.18
+  #     outOf: 4

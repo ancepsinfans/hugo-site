@@ -15,14 +15,14 @@ experiences:
       url: https://www.bold.com
       location: Remote
     positions:
-      - designation: Product Manager II, Global Content
+      - designation: Product Manager, AI Content Platform
         start: Apr 2024
         responsibilities:
           - "Own AI content platform serving 35-40 resume/cover letter portals across 15+ languages: 8 production API products (Work History, Skills, Summary, Cover Letter content delivery; Enhancement APIs; Resume/CL Personalization; Job Title Recommender) generating $10M+ annual revenue with 92% of team's monthly impact."
-          - "Lead shared cross-functional team of 14-15 (engineers, data scientists, content specialists, UX) as primary stakeholder; present product strategy and performance biweekly to CPO and product leadership. Built prompt engineering capability within content team through hands-on training and framework development."
-          - "Designed prompt architecture framework enabling live variable-based generation and JSON output structures for production APIs; pioneered migration from static content generation to dynamic, API-driven personalization. Created 18-month product vision and maintain autonomous roadmap (60% strategic initiatives, 40% cross-portal partnerships)."
-          - "Launched resume-to-job-ad tailoring API and job title recommender from 0-to-1; established multi-provider LLM evaluation process (OpenAI, Anthropic, Gemini) and prompt library reused across platform. Make independent decisions on LLM provider selection, technical architecture, and feature prioritization."
-          - "Grew platform revenue 2.5x from $4M to $10M+ annually; achieved >3% average conversion lift across experiments, 40% year-over-year reduction in post-release defects through systematic UAT processes. Track portfolio metrics including content add rate, adds per user, time on page, and engagement across culturally-specific implementations."
+          - "Lead shared cross-functional team of 14-15 (engineers, data scientists, content specialists, UX) as primary stakeholder; present product strategy and performance biweekly to CPO and product leadership. Build prompt engineering capability within content team through hands-on training and framework development."
+          - "Design prompt architecture framework enabling live variable-based generation and JSON output structures for production APIs; pioneer migration from static content generation to dynamic, API-driven personalization. Create 18-month product vision and maintain autonomous roadmap (60% strategic initiatives, 40% cross-portal partnerships)."
+          - "Launch resume-to-job-ad tailoring API and job title recommender from 0-to-1; establish multi-provider LLM evaluation process (OpenAI, Anthropic, Gemini) and prompt library reused across platform. Make independent decisions on LLM provider selection, technical architecture, and feature prioritization."
+          - "Grow platform revenue 2.5x from $4M to $10M+ annually; achieve >3% average conversion lift across experiments, 40% year-over-year reduction in post-release defects through systematic UAT processes. Track portfolio metrics including content add rate, adds per user, time on page, and engagement across culturally-specific implementations."
 
   - company:
       name: TripleTen (formerly Yandex.Practicum)
