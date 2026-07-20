@@ -10,7 +10,7 @@ section:
 
 # Your experiences
 experiences:
-- company:
+  - company:
       name: BOLD
       url: https://www.bold.com
       location: Remote
