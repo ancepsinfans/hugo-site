@@ -1,30 +1,25 @@
 section:
-  name: About # Title of section (default: "")
-  id: about # url id/slug of section *Required*
-  enable: true # Boolean to determine if this section is enabled (default: false)
-  weight: 1 # Order to display section in (default: alphabetical followed by weight)
-  showOnNavbar: false # Boolean to determine if a link should be shown for this section on the navbar
-  template: sections/about.html #
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: false
+  template: sections/about.html
 
-# your designation
 designation: Product Manager, AI Content Platform
-# your company information
 company:
   name: BOLD
   url: "https://www.bold.com"
 
 resume: "files/resume.pdf"
 
-# a summary about you
 summary: |
   Product manager building AI-powered platforms that scale globally.
-  
-  I own a $10M+ AI content platform at BOLD serving 35-40 resume/cover letter portals across 15+ languages. I design prompt architectures, lead multi-LLM evaluation, and drive product strategy from vision to execution. My work combines deep technical knowledge (API design, prompt engineering, evaluation frameworks) with business impact (2.5x revenue growth, >3% conversion lift, 40% defect reduction).
-  
+
+  I own a $10M+ AI content platform at BOLD — 20 production APIs serving 35-40 resume/cover letter portals across 15+ languages. Most recently, I led the AI generation workstream for a ground-up redesign of the resume upload & apply experience on Monster and Zety, architecting 12 net-new AI-first APIs and shipping ahead of schedule. I design prompt architectures, run multi-LLM evaluation and model migration, and drive product strategy from vision to execution. My work combines deep technical knowledge (API design, prompt engineering, evaluation frameworks) with business impact (2.5x revenue growth, >3% conversion lift, 40% defect reduction).
+
   Previously led data education programs at TripleTen (Yandex), and spent 10 years teaching English in Russia—experience that informs my user-centered approach to complex product problems. I build systems where none exist, lead through influence, and deliver measurable results in ambiguous environments.
 
-# your social links
-# give as many as you want. use font-awesome for the icons.
 socialLinks:
   - name: Email
     icon: "fas fa-envelope"
@@ -42,28 +37,23 @@ socialLinks:
     icon: "fab fa-goodreads"
     url: "https://goodreads.com/ancepsinfans"
 
-# Show your badges
-# You can show your verifiable certificates from https://www.credly.com.
-# You can also show a circular bar indicating the level of expertise on a certain skill
-
 badges:
   - type: soft-skill-indicator
     name: Product Strategy
     percentage: 100
     color: "#00ACC1"
-  - type: soft-skill-indicator  
-    name: |
-      Product Design
+  - type: soft-skill-indicator
+    name: Prompt Architecture
     percentage: 95
     color: "#AB47BC"
+  - type: soft-skill-indicator
+    name: LLM Evaluation
+    percentage: 95
+    color: "#FF7043"
   - type: soft-skill-indicator
     name: Python / JS
     percentage: 90
     color: "#26A69A"
-  - type: soft-skill-indicator
-    name: Learning Design
-    percentage: 95
-    color: "#FF7043"
   - type: soft-skill-indicator
     name: Experimentation
     percentage: 90
