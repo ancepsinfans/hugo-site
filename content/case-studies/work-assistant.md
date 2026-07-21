@@ -13,10 +13,12 @@ menu:
 
 ## Snapshot
 
-**Role:** Designed, built, and maintain it — this is a personal project, not a team deliverable
-**Stack:** Python, SQLite, sentence-transformers (local embeddings), provider-agnostic LLM layer (Anthropic / OpenAI / Ollama), launchd + Task Scheduler
-**Status:** Running four times a weekday on my machine
-**Repo:** [github.com/ancepsinfans/work-assistant](https://github.com/ancepsinfans/work-assistant) — built for myself; packaged as a forkable template. Swap the prompt templates and domain rules, point it at your own vault.
+| | |
+|---|---|
+| **Role** | Designed, built, and maintain it — personal project, not a team deliverable |
+| **Stack** | Python, SQLite, sentence-transformers (local embeddings), provider-agnostic LLM layer (Anthropic / OpenAI / Ollama), launchd + Task Scheduler |
+| **Status** | Running four times a weekday on my machine |
+| **Repo** | [github.com/ancepsinfans/work-assistant](https://github.com/ancepsinfans/work-assistant) — built for myself; packaged as a forkable template |
 
 ## The problem: one event, five todos
 

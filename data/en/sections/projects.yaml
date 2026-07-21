@@ -46,7 +46,6 @@ projects:
   - name: Student Reports Pipeline
     summary: "Automated weekly student reports with privacy-first React dashboard."
     tags: ["data-analysis", "react", "python"]
-    url: "https://student-reports.vercel.app/..."
 
   - name: LLM Chatbot – TripleTen Discord
     summary: "Llama2 + vectorized knowledge base for real-time student support."

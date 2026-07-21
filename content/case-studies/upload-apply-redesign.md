@@ -13,10 +13,12 @@ menu:
 
 ## Snapshot
 
-**Role:** Product Manager, AI Content Platform — led the AI generation (backend) workstream, coordinating with front-end, design, and content teams
-**Scope:** 12 net-new AI-first APIs across Monster and Zety
-**Timeline:** Planning began mid-April 2026; launched first half of July — ahead of schedule
-**Early results:** ~8% conversion lift (first full analytics review pending)
+| | |
+|---|---|
+| **Role** | Product Manager, AI Content Platform — led the AI generation (backend) workstream |
+| **Scope** | 12 net-new AI-first APIs across Monster and Zety |
+| **Timeline** | Mid-April 2026 planning → first-half-July launch, ahead of schedule |
+| **Early results** | ~8% conversion lift (first full analytics review pending) |
 
 ## The problem: a playground with no point of view
 

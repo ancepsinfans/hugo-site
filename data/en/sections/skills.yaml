@@ -12,13 +12,13 @@ section:
 # Give a summary of you each skill in the summary section.
 skills:
   - name: AI Product Strategy
-    logo: images/sections/skills/cloud.png
+    icon: fas fa-brain
     summary: Generative AI Product Development · Multi-LLM Evaluation & Model Selection · Model Governance · Guardrails Design · Prompt Engineering & Versioning · API Product Management
 
   - name: Technical Skills
-    logo: images/sections/skills/kubernetes.png
+    icon: fas fa-code
     summary: Platform Architecture · Python · SQL · JavaScript (React) · A/B Testing, Experimentation & Analytics
 
   - name: Product Leadership
-    logo: images/sections/skills/go.png
+    icon: fas fa-users
     summary: Product Strategy & Roadmapping · 0-to-1 Product Development · Stakeholder & Executive Communication · Cross-Functional Leadership
