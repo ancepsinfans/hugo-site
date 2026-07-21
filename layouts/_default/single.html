@@ -36,7 +36,7 @@
 {{ end }}
 
 {{ define "content" }}
-<section class="content-section" id="content-section" >
+<section class="content-section content-section--solo" id="content-section" >
   <div class="content">
     <div class="container p-0 read-area">
       <!--Hero Area-->
@@ -166,8 +166,8 @@
 {{ end }}
 
 {{ define "toc" }}
+  {{ if site.Params.enableTOC }}
   <section class="toc-section" id="toc-section">
-    {{ if site.Params.enableTOC }}
     <div class="toc-holder">
       <h5 class="text-center pl-3">{{ i18n "toc_heading" }}</h5>
       <hr>
@@ -175,8 +175,8 @@
         {{ .TableOfContents }}
       </div>
     </div>
-    {{ end }}
   </section>
+  {{ end }}
 {{ end }}
 
 {{ define "scripts" }}

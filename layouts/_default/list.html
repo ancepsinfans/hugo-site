@@ -69,8 +69,8 @@
 {{ end }}
 
 {{ define "toc" }}
+  {{ if site.Params.enableTOC }}
   <section class="toc-section" id="toc-section">
-    {{ if site.Params.enableTOC }}
     <div class="toc-holder">
       <h5 class="text-center pl-3">{{ i18n "toc_heading" }}</h5>
       <hr>
@@ -78,8 +78,8 @@
         {{ .TableOfContents }}
       </div>
     </div>
-    {{ end }}
   </section>
+  {{ end }}
 {{ end }}
 
 {{ define "scripts" }}
