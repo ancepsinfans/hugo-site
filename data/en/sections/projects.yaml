@@ -25,7 +25,6 @@ projects:
   - name: AI Content Platform - Product Area Ownership
     summary: "Own and scaled a 20-API platform serving 35-40 global portals with $10M+ annual revenue. Designed prompt architecture framework, launched resume personalization and job title recommendation from 0-to-1, established multi-LLM evaluation process. Grew platform revenue 2.5x through systematic experimentation achieving >3% average conversion lift."
     tags: ["case-study", "ai", "platform", "apis"]
-    url: "/case-studies/ai-content-platform"
 
   - name: Work Assistant — Personal Chief-of-Staff Agent
     summary: "Built for myself; packaged as a forkable template. A multi-source agent that collapses duplicated work signals into one prioritized picture — and runs a second pass to find what should be there but isn't."
@@ -40,7 +39,6 @@ projects:
   - name: Internal Ranking Platform – Chill Subs
     summary: "Python pipelines + unified ranking → faster editorial decisions."
     tags: ["case-study", "data-platform", "python"]
-    url: "/case-studies/ranking-platform"
 
   # Supporting Projects
   - name: Student Reports Pipeline
@@ -55,19 +53,7 @@ projects:
     summary: "Student curriculum review site + environment setup guides."
     tags: ["gatsby", "react", "edtech"]
 
-  - name: Skills Graph
-    summary: "Student soft/hard skills tracking and visualization system."
-    tags: ["mongodb", "nextjs", "edtech"]
-
   # Personality Flex
   - name: Personal Homelab
     summary: "Self-hosting genealogy, photos, Home Assistant on Minisforum MS-01."
     tags: ["hobby", "homelab", "self-hosting"]
-
-  - name: School Prototype
-    summary: "EdTech MVP: learning paths, quizzes, population analytics."
-    tags: ["edtech", "mongodb", "nextjs"]
-
-  - name: Congressional Speech Analysis
-    summary: "NLP: Predict Congress member age from speech patterns; partisan sentiment."
-    tags: ["hobby", "python", "nlp"]
