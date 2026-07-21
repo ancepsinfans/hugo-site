@@ -11,23 +11,14 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-  - name: Product Leadership & Strategy
-    logo: images/sections/skills/go.png
-    summary: Roadmapping, product vision, discovery, stakeholder management, cross-functional team leadership, P&L ownership, executive communication.
-
-
-  - name: AI & Platform Products  
+  - name: AI Product Strategy
     logo: images/sections/skills/cloud.png
-    summary: AI/ML product development, prompt engineering, multi-LLM evaluation (OpenAI, Anthropic, Gemini), API product management, platform architecture, JSON schema design.
+    summary: Generative AI Product Development · Multi-LLM Evaluation & Model Selection · Model Governance · Guardrails Design · Prompt Engineering & Versioning · API Product Management
 
-  - name: Data & Experimentation
-    logo: images/sections/skills/c++.png
-    summary: A/B testing, cohort analysis, funnel optimization, KPI design, SQL, Python (Pandas, scikit-learn), statistical analysis, dashboard development.
-
-  - name: Technical Product Skills
+  - name: Technical Skills
     logo: images/sections/skills/kubernetes.png
-    summary: API design, system architecture, Python/JavaScript for prototyping, React, MongoDB, prompt templating systems, evaluation frameworks.
+    summary: Platform Architecture · Python · SQL · JavaScript (React) · A/B Testing, Experimentation & Analytics
 
-  - name: Languages
-    logo: images/sections/skills/prometheus.png
-    summary: "English (native), Russian (C2 fluent) - managed bilingual product teams and served Russian-speaking markets for 10+ years."
+  - name: Product Leadership
+    logo: images/sections/skills/go.png
+    summary: Product Strategy & Roadmapping · 0-to-1 Product Development · Stakeholder & Executive Communication · Cross-Functional Leadership

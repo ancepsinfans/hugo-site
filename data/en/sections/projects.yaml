@@ -27,6 +27,11 @@ projects:
     tags: ["case-study", "ai", "platform", "apis"]
     url: "/case-studies/ai-content-platform"
 
+  - name: Work Assistant — Personal Chief-of-Staff Agent
+    summary: "Built for myself; packaged as a forkable template. A multi-source agent that collapses duplicated work signals into one prioritized picture — and runs a second pass to find what should be there but isn't."
+    tags: ["case-study", "ai", "agent", "personal"]
+    url: "/case-studies/work-assistant"
+
   - name: Drop/Refund Reduction - Data Programs
     summary: "Led data-driven intervention strategy across Data Science/Analyst bootcamps serving 1,000+ students. Redesigned onboarding, implemented predictive early-warning system, improved pacing through cohort analysis. Reduced drop/refund rate QoQ and increased NPS by 1.5 points."
     tags: ["case-study", "edtech", "data-analysis"]
