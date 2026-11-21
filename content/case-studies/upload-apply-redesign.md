@@ -18,12 +18,17 @@ menu:
 | **Role** | Product Manager, AI Content Platform — led the AI generation (backend) workstream |
 | **Scope** | 12 net-new AI-first APIs across Monster and Zety |
 | **Timeline** | Mid-April 2026 planning → first-half-July launch, ahead of schedule |
+| **Context** | Stage three of a platform-wide static → hybrid → context-conditioned migration |
 
 ## The problem
 
 The old upload flow accepted your resume and handed you a toolbox. The content suggestions were well written, but generic by construction — the same suggestions for everyone. A nurse with twelve years of experience and a college senior with one internship saw the product behave identically.
 
 What was missing wasn't quality. It was a point of view: nothing in the flow said "given who you are and where you've been, this is the best version of this section for you."
+
+## Where this sits
+
+The platform's content started life as a static database: well-written suggestions, the same for everyone. The second stage blended that library with generation. Upload & apply is the first surface built for the third stage — generation conditioned on who the user actually is — and it's the template the rest of the platform is migrating toward.
 
 ## The approach: infer first, generate second
 

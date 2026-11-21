@@ -23,7 +23,7 @@ projects:
     url: "/case-studies/upload-apply-redesign"
 
   - name: AI Content Platform - Product Area Ownership
-    summary: "Own and scaled a 20-API platform serving 35-40 global portals with $10M+ annual revenue. Designed prompt architecture framework, launched resume personalization and job title recommendation from 0-to-1, established multi-LLM evaluation process. Grew platform revenue 2.5x through systematic experimentation achieving >3% average conversion lift."
+    summary: "Own a 20-API platform serving 35-40 global portals with $10M+ annual revenue, and driving its three-stage migration from a legacy static content database through hybrid static/generative to context-conditioned generation. Designed the prompt architecture framework, launched personalization and job title recommendation from 0-to-1, and established multi-LLM evaluation. Grew platform revenue 2.5x through systematic experimentation achieving >3% average conversion lift."
     tags: ["case-study", "ai", "platform", "apis"]
 
   - name: Work Assistant — Personal Chief-of-Staff Agent
