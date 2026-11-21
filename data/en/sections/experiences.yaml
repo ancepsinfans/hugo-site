@@ -18,7 +18,7 @@ experiences:
       - designation: Product Manager, AI Content Platform
         start: Apr 2024
         responsibilities:
-          - "Own AI content platform serving 35+ resume/cover letter portals across 15+ languages: 20 production API products spanning content delivery, enhancement, personalization, and recommendation, generating $10M+ annual revenue with 92% of team's monthly impact."
+          - "Own AI content platform serving 35+ portals across 15+ languages: 20 production API products spanning content delivery, enhancement, personalization, and recommendation, generating $10M+ annual revenue with 92% of team's monthly impact."
           - "Drive three-stage migration of the platform's content layer — legacy static database → hybrid static/generative → context-conditioned generation, now live on Monster and Zety upload & apply — gated by an inferred user-context layer and multi-provider LLM-as-judge evaluation calibrated against SMEs."
           - "Led the AI generation workstream for a ground-up redesign of the resume upload & apply experience on Monster and Zety — architected and delivered 12 net-new AI-first APIs ahead of schedule, coordinating across backend, front-end, design, and content teams."
           - "Directed platform-wide foundation model migration through structured multi-provider evaluation (OpenAI, Anthropic, Gemini); standardized prompt architecture and reusable prompt library across all teams. Make independent decisions on LLM provider selection, technical architecture, and feature prioritization."
